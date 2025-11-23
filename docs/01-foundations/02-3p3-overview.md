@@ -605,3 +605,147 @@ By representing entities in one unified ontology rather than separate system lay
 - history becomes part of the system, not a side table
 
 This is why 3P3 is foundational to The Bridge—it keeps the entire system coherent as it expands.
+
+---
+
+## 2.12 The Three Perspectives as a Computational Model
+
+3P3 is not only a way to describe reality conceptually; it is a model that the system uses to compute meaning. Each perspective contributes to how entities are stored, interpreted, and executed. Together, they define how the software understands and manipulates the domain.
+
+The perspectives are operational, not symbolic.
+
+- **Structure determines what can exist.**
+- **Being determines what exists right now.**
+- **Time determines how existence changes.**
+
+These three dimensions form a complete computational cycle.
+
+### 2.12.1 Structure constrains computation
+
+Because CMP contains entity definitions, the system understands what entities are before they manifest. Structure informs computation by:
+
+- defining allowed attributes
+- defining allowed relationships
+- defining allowed transitions
+- defining allowed processes
+
+This ensures that computation follows meaning rather than arbitrary logic.
+
+### 2.12.2 Being provides the active state for computation
+
+ETY contains current state. It is what processes operate on. Computation in ETY is not happening in isolation—it is always anchored to meaning defined in CMP.
+
+If a value changes, the system knows:
+
+- which entity the value belongs to
+- which definition allowed that value to exist
+- how that value interacts with other entities
+
+State is never detached from identity.
+
+### 2.12.3 Time drives computation through transitions
+
+Processes run by writing transitions to LOG. Each transition:
+
+- reflects a state change
+- is linked to the entity’s identity
+- has a cause and effect
+- is recorded permanently
+
+Because LOG is structured, not ad-hoc, the system can:
+
+- replay transitions
+- infer causality
+- analyze behavior
+- project alternative futures
+
+Time is not data stored **after** computation—it is a dimension that computation *operates on*.
+
+### 2.12.4 Computation emerges from the substrate
+
+Traditional systems compute on:
+
+- business logic in code
+- workflow engines
+- handlers and triggers
+- external schema
+
+In The Bridge, computation emerges from structural meaning. The system does not execute code *about* the ontology—the ontology *is* what executes.
+
+### 2.12.5 Why this is powerful
+
+Because meaning drives computation, the system can:
+
+- evolve behavior by modifying definitions
+- compute differently without rewriting code
+- generate entities dynamically from templates
+- interpret data using its past transitions
+
+This enables systems that adapt over time based on updated definitions rather than static implementations.
+
+### 2.12.6 Summary
+
+> **3P3 is a runtime engine for meaning.**
+
+It turns the ontology from a description of the system into the mechanism that executes the system.
+
+---
+
+## 2.13 The Ontology as an Execution Engine
+
+In most systems, the ontology exists outside the execution layer. The model defines what things mean, but code defines what things do. This creates a gap between understanding and behavior: the system behaves according to code, not according to meaning.
+
+In The Bridge, the ontology and the execution engine are the same thing. Meaning is not translated into code—it drives execution directly. Definitions stored in CMP guide how ETY manifests and how LOG evolves.
+
+### 2.13.1 Action emerges from definition
+
+When a process occurs, the system does not call a function that updates records. Instead, it evaluates the entity’s definition and records a transition that reflects that definition.
+
+Behavior is an expression of what the entity *is*.
+
+### 2.13.2 No “privileged code paths”
+
+There is no separate layer that interprets templates through hard-coded logic. Templates, operations, permissions, transitions, and constraints are entities stored in CMP.
+
+The system executes those definitions using the same mechanics that apply to all entities.
+
+If a new concept is added, the system does not need new code to support it—it needs a new definition.
+
+### 2.13.3 Processes are executed through LOG
+
+Execution is expressed by recording transitions in LOG. The act of writing a LOG entry *is* the execution of a process. ETY reflects the result of those transitions.
+
+There is no gap between:
+- describing a process
+- and performing the process
+
+Execution updates the ontology in real time.
+
+### 2.13.4 Meaning can evolve at runtime
+
+Because definitions are entities, not schema:
+
+- new entity types can be defined dynamically
+- new workflows can emerge without patching code
+- constraints and rules can change over time
+
+The system adapts because the ontology adapts.
+
+### 2.13.5 Ontology replaces business logic
+
+The Bridge does not separate:
+
+- models from controllers
+- schema from workflows
+- definitions from execution
+
+Instead, these collapse into a single representational layer.
+
+The engine runs meaning, not instructions.
+
+### 2.13.6 Summary
+
+> **The ontology is not documentation.  
+> It is the mechanism that performs computation.**
+
+This is what makes The Bridge fundamentally different from frameworks that rely on external code to interpret structure.
