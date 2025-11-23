@@ -1,26 +1,95 @@
-site_name: The Bridge – Optimized Technical Documentation
+site_name: The Bridge - Optimized Full Technical Specifications Document
 site_url: https://caufero.github.io/thebridge-optimized-docs
 repo_url: https://github.com/caufero/thebridge-optimized-docs
 
 theme:
   name: material
-  language: en
   features:
-    - navigation.instant
     - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
     - content.code.copy
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  logo: assets/logo.svg       # add this file in step 2
+  favicon: assets/favicon.png # add this file in step 2
 
 extra_css:
+  - styles/overrides.css
   - styles/print-fixes.css
 
+extra:
+  social:
+    - icon: material/web
+      link: https://caufero.com
+  site_description: Official technical documentation for The Bridge software.
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - js/mermaid-init.js  
+      
 plugins:
   - search
   - pdf-export:
       combined: true
       combined_output_path: pdf/TheBridge-Optimized-Technical-Specifications.pdf
       media_type: print
-      stylesheets:
-        - styles/print-fixes.css
-
+      
 nav:
   - Home: index.md
+  - 1. Introduction: 01-introduction.md
+  - 2. Vision & Philosophy: 02-vision-philosophy.md
+  - 3. System Objectives: 03-system-objectives.md
+  - 4. Functional Requirements: 04-functional-requirements.md
+  - 5. Stack: 05-stack.md
+  - 6. Ontological Integration: 06-ontological-integration.md
+  - 7. User Interface Design: 07-user-interface-design.md
+  - 8. Attributes of Attributes – The 10 Ontological Domains: 08-attributes-of-attributes.md
+  - 9. Workflow Specification: 09-workflow-specification.md
+  - 10. Operational Flow: 10-operational-flow.md
+  - 11. Operational Chain and Triggers: 11-operational-chain-triggers.md
+  - 12. Communication and Responsibility: 12-communication-responsibility.md
+  - 13. External Integrations: 13-external-integrations.md
+  - 14. Security Model: 14-security-model.md
+  - 15. Rules Engine (For Processes): 15-rules-engine.md
+  - 16. Integration Strategy: 16-integration-strategy.md
+  - 17. Reporting & Analytics: 17-reporting-analytics.md
+  - 18. Non-Functional Requirements: 18-nonfunctional-requirements.md
+  - 19. Development Plan: 19-development-plan.md
+  - 20. Testing Strategy: 20-testing-strategy.md
+  - 21. Deployment Plan: 21-deployment-plan.md
+  - 22. Documentation: 22-documentation.md
+  - 23. Maintenance & Support: 23-maintenance-support.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.details
+  - pymdownx.tasklist
+  - pymdownx.tabbed
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
