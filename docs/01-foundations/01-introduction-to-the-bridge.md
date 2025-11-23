@@ -127,3 +127,35 @@ This creates a tautology:
 There is no difference between “the metadata describing the entity” and “the record representing the entity.” They are expressions of the same ontological truth, viewed from different dimensions.
 
 This removes fragmentation and allows the system to describe itself using its own mechanics, without external scaffolding or privileged schema.
+
+---
+
+## 1.6 The Collapse of Metadata Into the Ontology
+
+In conventional software design, metadata is treated as a higher-order layer that exists outside the domain. Developers define entities in one place, store data in another, implement behavior in scripts, and log history in yet another layer. Metadata becomes a separate system that describes the real system, but is not part of it.
+
+This separation introduces hierarchy, exceptions, and constraints that must be manually synchronized.
+
+With The Bridge, there is no external metadata layer. The definitions of entities, their attributes, and their permissible operations are entities themselves. They are created, modified, and expressed using the same mechanics as every other object in the system.
+
+There is only one substrate.
+
+- **A template is an entity.**
+- **An attribute definition is an entity.**
+- **An operation is an entity.**
+- **A process definition is an entity.**
+
+These entities exist inside the CMP → ETY → LOG cycle, like everything else.
+
+This has three consequences:
+
+### 1.6.1 No privileged tables
+There are no special schema tables holding “definitions.” All definitions are represented in the same structural space as real-world objects. The system uses itself to describe itself.
+
+### 1.6.2 Changes propagate naturally
+Because definitions are entities, changing a template or attribute does not require schema migrations, cascading script updates, or manual refactoring. The system updates based on ontology, not code rewrites.
+
+### 1.6.3 Self-reference becomes possible
+Since the system contains its own meta-definitions, it can introspect, generate new entities, and restructure itself at runtime. The same logic used to represent a person or a machine can represent the definition of a role, a procedure, or a classification.
+
+This collapses the gap between “data about things” and “the things themselves,” eliminating the distinction between model and meta-model.
