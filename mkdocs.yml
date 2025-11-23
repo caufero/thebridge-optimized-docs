@@ -54,11 +54,11 @@ plugins:
       
 nav:
   - Home: index.md
-  - 1. Introduction: foundations/introduction-to-the-bridge.md
-  - 2. Vision & Philosophy: 02-vision-philosophy.md
-  - 3. System Objectives: 03-system-objectives.md
-  - 4. Functional Requirements: 04-functional-requirements.md
-  - 5. Stack: 05-stack.md
+  - 1. Introduction: 01-foundations/01-introduction-to-the-bridge.md
+  - 2. 3P3 Overview: 01-foundations/02-3p3-overview.md
+  - 3. Ontological Structure: 01-foundations/03-ontological-structure.md
+  - 4. Principles and Rules: 01-foundations/04-principles-and-rules.md
+  - 5. Terminology and Concepts: 01-foundations/05-terminology-and-concepts.md
   - 6. Ontological Integration: 06-ontological-integration.md
   - 7. User Interface Design: 07-user-interface-design.md
   - 8. Attributes of Attributes – The 10 Ontological Domains: 08-attributes-of-attributes.md
