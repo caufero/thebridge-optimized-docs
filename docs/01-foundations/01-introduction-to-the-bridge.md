@@ -1,9 +1,8 @@
-# Introduction to The Bridge
+# Introduction
 
-The Bridge is a structured methodology for designing business systems that behave as unified, coherent platforms rather than collections of isolated software features.
+The Bridge is a technical and conceptual framework for building business systems whose behavior is consistent, explainable, and adaptable over time. It treats a software system as a space of entities and relationships rather than a collection of isolated screens, scripts, and tables.
 
-It provides a consistent way to define entities, processes, data relationships, and interactions across an organization. The Bridge focuses on ontology first, ensuring that every function, workflow, and interface is derived from a stable conceptual model rather than ad-hoc implementation decisions.
+Instead of starting from user interface mockups or individual features, The Bridge starts from ontology:  
+what exists in the domain, how it is structured, and how it changes. From that foundation, processes, interfaces, data models, and automation flows are derived in a controlled and repeatable way.
 
-The Bridge supports models such as the 3P3 Framework, Domain Attributes, the Matrix, and the Process Manager. These models work together to create predictable behavior, traceability, and long-term scalability across complex systems.
-
-The Bridge is not a product. It is a design language and architectural foundation that guides how systems are structured, executed, and evolved over time.
+The Bridge underlies the 3P3 ontological system, the core tables used in the FileMaker implementation, and the Process Manager that executes complex behaviors. This document explains how all these pieces fit together and how to implement them in a real system.
