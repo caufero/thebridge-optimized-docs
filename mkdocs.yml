@@ -1,0 +1,26 @@
+site_name: The Bridge – Optimized Technical Documentation
+site_url: https://caufero.github.io/thebridge-optimized-docs
+repo_url: https://github.com/caufero/thebridge-optimized-docs
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.sections
+    - content.code.copy
+
+extra_css:
+  - styles/print-fixes.css
+
+plugins:
+  - search
+  - pdf-export:
+      combined: true
+      combined_output_path: pdf/TheBridge-Optimized-Technical-Specifications.pdf
+      media_type: print
+      stylesheets:
+        - styles/print-fixes.css
+
+nav:
+  - Home: index.md
