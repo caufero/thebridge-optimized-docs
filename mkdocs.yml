@@ -64,19 +64,20 @@ nav:
   - 8. Relationships: 02-architecture/08-relationships.md
   - 9. Instance Manager: 02-architecture/09-instance-manager.md
   - 10. Process Manager: 02-architecture/10-process-manager.md
-  - 11. Bootstrap: 02-architecture/11-bootstrap.md
-  - 12. Communication and Responsibility: 12-communication-responsibility.md
-  - 13. External Integrations: 13-external-integrations.md
-  - 14. Security Model: 14-security-model.md
-  - 15. Rules Engine (For Processes): 15-rules-engine.md
-  - 16. Integration Strategy: 16-integration-strategy.md
-  - 17. Reporting & Analytics: 17-reporting-analytics.md
-  - 18. Non-Functional Requirements: 18-nonfunctional-requirements.md
-  - 19. Development Plan: 19-development-plan.md
-  - 20. Testing Strategy: 20-testing-strategy.md
-  - 21. Deployment Plan: 21-deployment-plan.md
-  - 22. Documentation: 22-documentation.md
-  - 23. Maintenance & Support: 23-maintenance-support.md
+  - 11. Bootstrap: 02-architecture/11-bootstrap.md 
+  - 12. Setup Environment: 03-implementation/12-setup-environment.md
+  - 13. Build Schema: 03-implementation/13-build-schema.md
+  - 14. Configure Scripts: 03-implementation/14-configure-scripts.md
+  - 15. User Interface: 03-implementation/15-user-interface.md
+  - 16. Testing and Debugging: 03-implementation/16-testing-and-debugging.md
+  - 17. Deployment: 03-implementation/17-deployment.md
+  - 18. Glossary: 04-appendices/18-glossary.md
+  - 19. Matrix Extract: 04-appendices/19-matrix-extract.md
+  - 20. React Reference: 04-appendices/20-react-reference.md
+  - 21. Contact and Support: 04-appendices/21-contact-and-support.md
+  - 22. Change Log: 05-meta/22-changelog.md
+  - 23. Roadmap: 05-meta/23-roadmap.md
+  - 24. Summary: 05-meta/24-summary.md
 
 markdown_extensions:
   - admonition
