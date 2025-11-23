@@ -61,8 +61,8 @@ nav:
   - 5. Terminology and Concepts: 01-foundations/05-terminology-and-concepts.md
   - 6. Overview: 02-architecture/06-overview.md
   - 7. Core Tables: 02-architecture/07-core-tables.md
-  - 8. Relationships – The 10 Ontological Domains: 02-architecture/08-relationships.md
-  - 9. Instance Manager: 002-architecture/09-instance-manager.md
+  - 8. Relationships: 02-architecture/08-relationships.md
+  - 9. Instance Manager: 02-architecture/09-instance-manager.md
   - 10. Process Manager: 02-architecture/10-process-manager.md
   - 11. Bootstrap: 02-architecture/11-bootstrap.md
   - 12. Communication and Responsibility: 12-communication-responsibility.md
