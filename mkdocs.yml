@@ -12,6 +12,7 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.section.number
   font:
     text: Inter
     code: JetBrains Mono
