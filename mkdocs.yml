@@ -54,7 +54,7 @@ plugins:
       
 nav:
   - Home: index.md
-  - 1. Introduction: 01-introduction.md
+  - 1. Introduction: foundations/introduction-to-the-bridge.md
   - 2. Vision & Philosophy: 02-vision-philosophy.md
   - 3. System Objectives: 03-system-objectives.md
   - 4. Functional Requirements: 04-functional-requirements.md
