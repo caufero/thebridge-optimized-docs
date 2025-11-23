@@ -159,3 +159,39 @@ Because definitions are entities, changing a template or attribute does not requ
 Since the system contains its own meta-definitions, it can introspect, generate new entities, and restructure itself at runtime. The same logic used to represent a person or a machine can represent the definition of a role, a procedure, or a classification.
 
 This collapses the gap between “data about things” and “the things themselves,” eliminating the distinction between model and meta-model.
+
+---
+
+## 1.7 Universality and the Three-Table Substrate
+
+The Bridge is built on a single, universal structure with three tables. These tables are not a database design choice; they are a direct expression of how the system understands reality. Every entity, template, attribute, operation, and event is represented through the interaction of these three layers.
+
+- **CMP** holds the conceptual definition of what exists.
+- **ETY** holds the real-world manifestations of those concepts.
+- **LOG** records how entities act, evolve, and interact over time.
+
+Nothing in the system lives outside these three dimensions.
+
+There are no supporting schema tables, no metadata tables, and no special structures for templates or configurations. What would traditionally be “system tables” become first-class entities defined inside CMP, instantiated through ETY, and tracked through LOG.
+
+This is what makes the system universal: it can represent anything using a single mechanism.
+
+### 1.7.1 One mechanism for everything
+Instead of separate mechanisms for:
+- business entities
+- system configuration
+- workflows
+- validation rules
+- permissions
+- audit logs
+- templates
+
+…the system uses the same ontological structure for all of them.
+
+### 1.7.2 Behavior emerges from identity
+Because all definitions are entities, behavior is derived from CMP, not bound to scripts or hard-coded logic. Processes change as the underlying definitions change.
+
+### 1.7.3 Expansion without redesign
+To add a new concept to the system, you define a new entity in CMP and instantiate it in ETY. No schema changes are required because the structure already supports universal representation.
+
+The substrate does not need to change when the domain changes. It holds space for everything the system will ever need to express.
