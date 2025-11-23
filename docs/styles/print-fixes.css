@@ -1,0 +1,51 @@
+/* Print fixes for PDF export */
+
+@media print {
+  html, body {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .md-main, .md-container, .md-content, .md-content__inner,
+  main, article, section, .md-typeset {
+    height: auto !important;
+    overflow: visible !important;
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+    break-before: auto !important;
+    page-break-before: auto !important;
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+
+  .md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4 {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .md-typeset h1 + *,
+  .md-typeset h2 + *,
+  .md-typeset h3 + *,
+  .md-typeset h4 + * {
+    break-before: avoid !important;
+    page-break-before: avoid !important;
+  }
+
+  pre, pre code, code, table, blockquote {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .page-break, .print-page-break {
+    break-before: auto !important;
+    break-after: auto !important;
+    page-break-before: auto !important;
+    page-break-after: auto !important;
+  }
+
+  @page {
+    margin: 16mm;
+  }
+}
