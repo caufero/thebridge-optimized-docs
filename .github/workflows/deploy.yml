@@ -1,7 +1,7 @@
 name: deploy
 on:
   push:
-    branches: [ main ]
+    branches: [ main ]   # change to [ master ] if your default branch is master
 permissions:
   contents: read
   pages: write
