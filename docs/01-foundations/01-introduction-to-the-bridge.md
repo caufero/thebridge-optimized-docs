@@ -7,6 +7,7 @@ what exists in the domain, how it is structured, and how it changes. From that f
 
 The Bridge underlies the 3P3 ontological system, the core tables used in the FileMaker implementation, and the Process Manager that executes complex behaviors. This document explains how all these pieces fit together and how to implement them in a real system.
 
+---
 
 ## 1.1 Purpose of The Bridge
 
@@ -24,6 +25,7 @@ The Bridge ensures that:
 
 This creates systems that scale in complexity without losing clarity.
 
+---
 
 ## 1.2 Who This Document Is For
 
@@ -44,3 +46,30 @@ Stakeholders responsible for designing workflows, understanding business logic, 
 People integrating The Bridge into other systems, contributing to new modules, or adapting it to new industries or problem domains.
 
 The document assumes familiarity with basic software development concepts. Where specialized knowledge is required (e.g., ontological modeling, process orchestration, graph structures), explanations are provided in earlier chapters before advanced material is introduced.
+
+---
+
+## 1.3 How This Document Is Structured
+
+This document is divided into sequential chapters that move from conceptual foundations to full system implementation. Each chapter builds on the previous one, and many concepts introduced early are expanded and instantiated later through practical examples.
+
+At a high level, the document is organized into three major parts:
+
+### 1.3.1 Foundations and Ontology
+This part introduces the intellectual framework behind The Bridge and 3P3. It explains what the system is, why it exists, and how it models real-world domains. Key concepts such as CMP, ETY, LOG, templates, attributes, operations, and the role of classification are defined here.
+
+This section provides the vocabulary and reasoning necessary to understand the rest of the document.
+
+### 1.3.2 System Architecture
+This part describes how the conceptual model translates into a software system. It covers how the three tables operate as a unified substrate, how entities and interactions are stored, and how structure, state, identity, and history are represented.
+
+This section focuses on models, structures, and mechanics rather than UI or workflows.
+
+### 1.3.3 Implementation Details
+This part provides step-by-step procedures for building the system. It includes how to bootstrap the first set of records, how to define templates for domain entities, how to execute processes, and how to interact with the system programmatically.
+
+This section is practical and applies the earlier theory to executable artifacts.
+
+---
+
+Together, these three parts move the reader from understanding the core ideas to implementing and extending them in real systems.
