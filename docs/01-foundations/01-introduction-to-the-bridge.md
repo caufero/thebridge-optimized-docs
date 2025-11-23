@@ -195,3 +195,42 @@ Because all definitions are entities, behavior is derived from CMP, not bound to
 To add a new concept to the system, you define a new entity in CMP and instantiate it in ETY. No schema changes are required because the structure already supports universal representation.
 
 The substrate does not need to change when the domain changes. It holds space for everything the system will ever need to express.
+
+---
+
+## 1.8 Time as a First-Class Dimension in Ontological Space
+
+In most systems, time is treated as an afterthought. Developers first design records and processes, then later add logs, timestamps, or audit trails if required. Time becomes a secondary layer that observes the system from the outside.
+
+In The Bridge, time is internal to the system. It is one of the three primary dimensions through which an entity exists. LOG does not simply track changes; it expresses the entity’s state across time as part of its identity.
+
+An entity does not just exist statically. It exists as a sequence of manifestations.
+
+- **Structure (CMP)** defines what the entity is.
+- **Being (ETY)** represents its existence in the present.
+- **Time (LOG)** reflects how that existence unfolds.
+
+These are not separate models. They are three perspectives on the same object.
+
+### 1.8.1 The entity is a timeline, not a snapshot
+An entity should not be understood as a static record that “changes.” Instead, it is a continuous timeline made visible through discrete events. Every state the entity ever had remains part of its identity, and new states do not overwrite old ones—they extend the timeline.
+
+### 1.8.2 LOG is not a trailing history
+In traditional systems, logs are append-only artifacts added for auditing. In The Bridge, LOG is part of the ontology. It is the dimension through which an entity expresses motion, execution, and evolution.
+
+This gives time the same status as structure and state, rather than being a diagnostic tool.
+
+### 1.8.3 Queries become temporal
+Because the system understands time as a dimension of data, questions such as:
+
+- “What is the current state?”
+- “What was true before X happened?”
+- “How did this entity evolve?”
+- “What sequence of processes led here?”
+
+…become first-class queries supported by design, not manual reconstruction.
+
+### 1.8.4 Processes are temporal expressions
+Processes are no longer scripts or functions; they are sequences of transitions recorded as LOG events. The system reasons about what happened using the same ontology that defines what can exist.
+
+Time is not an add-on. It is part of the identity of everything stored in the system.
