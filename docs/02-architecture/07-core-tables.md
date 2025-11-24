@@ -6,8 +6,6 @@ The architecture of THE BRIDGE is built entirely on **three and only three table
 * **ETY** → ENTITÀ (Being / Current State)
 * **LOG** → NATURA (Process / History)
 
-Both the technical guide and the public documentation agree precisely on this point:
-
 > “Architecture is based on three core tables and a small set of generic engines.”
 > *(TheBridge Documentation)*
 
@@ -103,7 +101,6 @@ Every LOG entry deepens this trail.
 
 ### **What CMP Actually Contains**
 
-CMP is **not “templates only”**.
 CMP stores the **structural manifestation of every entity**, including:
 
 * Templates (TPL)
@@ -111,15 +108,13 @@ CMP stores the **structural manifestation of every entity**, including:
 * Bootstrap manifestations for MET
 * Bootstrap manifestations for OPE
 
-The key phrase from your uploaded file:
-
 > “BOTH (template and instance) are ENTITIES… BOTH live in CMP–ETY–LOG… BOTH follow the same rules.”
 > *(Implementation Guide)*
 
 **CMP = ASPETTO**
 It is the “what it *is*” perspective of any entity.
 
-### **Fields (Conceptual)**
+### **Fields**
 
 * dna_id
 * entity_type (`TPL`, `PHO`, `CLI`, `MET`, `OPE`, etc.)
@@ -159,7 +154,6 @@ Every entity has an ETY row:
 The existence of ETY for templates and meta-entities is explicitly confirmed by bootstrap:
 
 > “Each MET and OPE exists as CMP, ETY, LOG.”
-> *(Implementation Guide)*
 
 ### **ETY Fields (Conceptual)**
 
@@ -248,25 +242,7 @@ This is the absolute consistency of the ontology.
 
 ---
 
-## **7.7 Why Link Tables Are NOT Core Tables**
-
-The public docs mention “three core tables.”
-The technical guide reinforces this repeatedly.
-
-Link tables (such as CMP_LINK or ETY_LINK):
-
-* may exist as internal tools
-* are implementation conveniences
-* but are **not part of the ontology**
-* and **not part of the architecture’s core**
-
-Only CMP–ETY–LOG are core.
-
-Everything else is a helper.
-
----
-
-## **7.8 Summary: The Triad Is the Architecture**
+## **7.7 Summary: The Triad Is the Architecture**
 
 The entire design of THE BRIDGE rests on:
 
