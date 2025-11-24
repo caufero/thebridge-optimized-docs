@@ -104,7 +104,7 @@ Every LOG entry deepens this trail.
 CMP stores the **structural manifestation of every entity**, including:
 
 * Templates (TPL)
-* Business entity structures (PHO, CLI, ORD, EXT…)
+* Business entity instances (PHO, CLI, ORD, EXT…)
 * Bootstrap manifestations for MET
 * Bootstrap manifestations for OPE
 
