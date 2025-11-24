@@ -45,7 +45,7 @@ These three records are not “connected”—they are **one being** observed fr
 The unifying force is the **DNA_ID**, the sacred identifier shared across CMP, ETY, LOG.
 It binds the three essences into one entity, one movement, one identity.
 
-## **1.3 CMP (ASPETTO): Pure Structure**
+## **1.3 CMP (ASPETTO): Pure Structure and Instances**
 
 CMP represents *form*, *possibility*, *definition*.
 It holds:
