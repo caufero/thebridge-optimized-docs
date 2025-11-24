@@ -89,13 +89,6 @@ Three core tables must exist and remain immutable in name and structure:
 * **ETY_TABLE**
 * **LOG_TABLE**
 
-Additionally, the system requires:
-
-* **OPE_TABLE** (operational definitions when stored separately)
-* **MET_TABLE** (attribute definitions when stored separately)
-* **SYSTEM_SETTINGS** (optional global configuration)
-* **NAVIGATION_HANDLERS** (script folder, not a table)
-
 All structures must follow the definitions established during bootstrap.
 
 ---
