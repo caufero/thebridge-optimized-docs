@@ -87,7 +87,7 @@ This duality is natural because ASPETTO always expresses **structure**, whether 
 ENTITÀ is the realm of manifestation.
 What the entity *is now*, in its current moment of existence.
 
-This is ETY_TABLE.
+This is **ETY** table.
 
 ETY contains:
 
