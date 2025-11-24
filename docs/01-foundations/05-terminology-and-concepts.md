@@ -42,7 +42,7 @@ This is the metaphysical foundation of the entire system.
 **Meaning:**
 What an entity **IS** — its form, template, and structural definition.
 
-**Implemented as:** **CMP_TABLE**.
+**Implemented as:** **CMP** Table.
 
 ---
 
@@ -52,7 +52,7 @@ What an entity **IS** — its form, template, and structural definition.
 **Meaning:**
 What an entity **DOES** — actions, flows, transformations, history.
 
-**Implemented as:** **LOG_TABLE**.
+**Implemented as:** **LOG** Table.
 
 ---
 
@@ -62,7 +62,7 @@ What an entity **DOES** — actions, flows, transformations, history.
 **Meaning:**
 What an entity **BECOMES** — its integrated state, manifestation, current existence.
 
-**Implemented as:** **ETY_TABLE**.
+**Implemented as:** **ETY** Table.
 
 ---
 
