@@ -18,8 +18,6 @@ These realities are not “parts” of an entity.
 They are the entity.
 They are the three angles by which the same being becomes intelligible.
 
-The uploaded document calls this **Tripartition**—the absolute foundation of the system.
-
 ```
 ENTITY = ASPETTO  ∩  NATURA  ∩  ENTITÀ
 ```
