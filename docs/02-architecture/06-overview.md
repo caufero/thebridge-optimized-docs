@@ -230,9 +230,11 @@ It consists of:
 * CMP (structure)
 * ETY (state)
 * LOG (history)
+
 * MET (universal attributes)
 * ATR (specific attributes)
 * OPE (operations)
+
 * Navigators X/Y/Z
 * Universal Processor
 * SuperTable UI
