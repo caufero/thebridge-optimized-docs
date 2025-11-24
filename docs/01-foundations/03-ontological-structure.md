@@ -124,7 +124,7 @@ ENTITÀ is described as “integration and becoming,” and the ETY table holds 
 
 The ETY JSON is always the translation of the structure (ASPETTO) and the operations (NATURA) into a single unified substance.
 
-## **3.4 NATURA — Process (LOG Table)**
+## **3.4 NATURA — Actions (LOG Table)**
 
 NATURA is the dimension of **action**.
 
@@ -135,7 +135,7 @@ Where ASPETTO is form, and ENTITÀ is existence, NATURA is:
 * change
 * transformation
 
-This is **LOG_TABLE**.
+This is **LOD** table.
 
 LOG records:
 
@@ -146,7 +146,7 @@ LOG records:
 * structural coordinates
 * the semantic meaning of each transition
 
-The uploaded document describes NATURA as process, history, verbs, doing, and transformations.
+NATURA is history, verbs, doing, and transformations.
 
 ### **3.4.1 LOG as Immutable Reality**
 
