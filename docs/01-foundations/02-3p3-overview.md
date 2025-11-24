@@ -33,21 +33,21 @@ Every entity has:
 * What the entity *is*
 * Its form, template, structure, and possibility
 * Symbol: 🔵
-* Materialized in FileMaker as **CMP_TABLE** (Components/Templates)
+* Materialized in FileMaker as **CMP** table (Components/Templates/Instances)
 
 ### **NATURA (Nature / Process)**
 
 * What the entity *does*
 * Its action, flow, history
 * Symbol: 🔴
-* Materialized in FileMaker as **LOG_TABLE** (History/Process)
+* Materialized in FileMaker as **LOG** table (History/Process)
 
 ### **ENTITÀ (Entity / Being)**
 
 * What the entity *becomes*
 * Its integrated existence
 * Symbol: 🟡
-* Materialized in FileMaker as **ETY_TABLE** (Instances/Being)
+* Materialized in FileMaker as **ETY** table (State/Being)
 
 This mapping from ontology → FileMaker implementation appears explicitly in the referenced schema diagram.
 
