@@ -11,8 +11,7 @@ It is an ontological architecture in which **everything is Entity**, and every e
 2. **NATURA** — what the entity *does* (process / action)
 3. **ENTITÀ** — what the entity *becomes* (integration / being)
 
-These are not separable parts; they are three windows into a **single ontological unity**.
-According to the document’s tripartition explanation, all three aspects are **simultaneous** and together form *one entity*.
+These are not separable parts; they are three windows into a **single ontological unity**. All three aspects are **simultaneous** and together form *one entity*.
 
 The ontology explicitly rejects distinctions such as:
 
