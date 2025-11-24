@@ -52,6 +52,7 @@ It holds:
 
 * **Templates**
 * **Structural instances**
+* **Business instances**
 * **Ontological coordinates (structure_id)**
 * **Universal and specific attribute composition**
 * **Validation rules**
