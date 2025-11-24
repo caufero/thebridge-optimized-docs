@@ -34,6 +34,7 @@ Stores the structural identity of every entity:
 * allowed OPE
 * structural coordinates
 * inherited form
+* actual instances
 
 It is the realm of **form and definition**.
 
