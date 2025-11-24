@@ -24,7 +24,7 @@ This chapter gives an overview of how the entire architecture fits together, phi
 
 The Bridge architecture is built entirely around three tables:
 
-### **1. CMP_TABLE — Structural Manifestation (ASPETTO)**
+### **1. CMP Table — Structural Manifestation (ASPETTO)**
 
 Stores the structural identity of every entity:
 
@@ -38,7 +38,7 @@ Stores the structural identity of every entity:
 
 It is the realm of **form and definition**.
 
-### **2. ETY_TABLE — Current State Manifestation (ENTITÀ)**
+### **2. ETY Table — Current State Manifestation (ENTITÀ)**
 
 Stores the living state of each entity:
 
@@ -49,7 +49,7 @@ Stores the living state of each entity:
 
 It is the realm of **existence**.
 
-### **3. LOG_TABLE — Historical Manifestation (NATURA)**
+### **3. LOG Table — Historical Manifestation (NATURA)**
 
 Stores the full chronological process:
 
