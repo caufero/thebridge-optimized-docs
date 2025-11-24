@@ -227,9 +227,9 @@ The Bridge architecture is not a design—it is a **mathematical ontology implem
 
 It consists of:
 
-* CMP (structure)
-* ETY (state)
-* LOG (history)
+* CMP Table (structure)
+* ETY Table (state)
+* LOG Table (history)
 
 
 
