@@ -22,7 +22,7 @@ They are the three angles by which the same being becomes intelligible.
 ENTITY = ASPETTO  ∩  NATURA  ∩  ENTITÀ
 ```
 
-## **3.2 ASPETTO — Structure (CMP_TABLE)**
+## **3.2 ASPETTO — Structure (CMP Table)**
 
 ASPETTO is the realm of form.
 It is where the entity declares:
@@ -40,10 +40,11 @@ ASPETTO determines:
 * its position in the structural coordinate system (STRUCTURE_ID)
 * defaults, invariants, and compositional truth
 
-ASPETTO corresponds to **CMP_TABLE**, whose function is:
+ASPETTO corresponds to **CMP** table, whose function is:
 
 * Store every **template**
 * Store every **structural instance** of each entity
+* Store every **business instance** of each entity
 * Store the **identity of the entity in structural space**
 
 ASPETTO is always static, even when the entity is dynamic.
@@ -81,7 +82,7 @@ Every entity has two “faces” in CMP:
 
 This duality is natural because ASPETTO always expresses **structure**, whether structural form is abstract (template) or concrete (instance).
 
-## **3.3 ENTITÀ — Being (ETY_TABLE)**
+## **3.3 ENTITÀ — Being (ETY Table)**
 
 ENTITÀ is the realm of manifestation.
 What the entity *is now*, in its current moment of existence.
@@ -124,7 +125,7 @@ In the document’s glossary, ENTITÀ is described as “integration and becomin
 
 The ETY JSON is always the translation of the structure (ASPETTO) and the operations (NATURA) into a single unified substance.
 
-## **3.4 NATURA — Process (LOG_TABLE)**
+## **3.4 NATURA — Process (LOG Table)**
 
 NATURA is the dimension of **action**.
 
