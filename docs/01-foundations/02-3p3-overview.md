@@ -95,8 +95,6 @@ However, under 3P3, the ontology collapses the system into:
 * **4 scripts** (the Universal Navigators)
 * **1 layout** (the SuperTable)
 
-This reduction is explicitly listed in the “Why This Matters” section of the guide.
-
 This minimalism is possible because the entity carries its own definition (ASPETTO), its own process (NATURA), and its own instance (ENTITÀ). Nothing needs to be duplicated or rewritten for each “type” of thing.
 
 ---
@@ -107,20 +105,16 @@ A central law of 3P3:
 
 > **Every MET (Meta-Attribute) has exactly one OPE (Operation).**
 
-This is referred to as *non-negotiable* and called the foundation of the entire system.
+This is *non-negotiable* and is the foundation of the entire system.
 
 * MET represents universal attributes (56 of them).
 * OPE represents universal operations (56 of them).
-
-The uploaded file lists samples of MET and OPE records, confirming the attributes, their Type, Domain, examples, and 1:1 linking between the two sets.
 
 This correspondence is essential because NATURA manifests through operations exactly aligned with the ASPETTO definition.
 
 ---
 
 ## **2.7 Why 3P3 Is Revolutionary**
-
-Based directly on the guide:
 
 ### **Unified Ontology**
 
