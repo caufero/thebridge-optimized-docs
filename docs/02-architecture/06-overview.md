@@ -1,282 +1,230 @@
 # **Chapter 6 — Architecture Overview**
 
-*(architecture/overview.md)*
-
 ## **6.1 Purpose of the Architecture**
 
-The architecture of **THE BRIDGE** exists for one reason:
+The architecture of **THE BRIDGE** exists for a single purpose:
 
-> To manifest the *ontological truth* of 3P3 inside a working, deterministic, fully navigable software system.
+> To manifest the *ontological truth* of 3P3 inside a deterministic, self-consistent, and universally navigable software system.
 
-Everything in the architecture is derived from the same sacred principle repeated throughout the document:
+There are no arbitrary design choices.
+Everything emerges from the triadic structure:
 
-* **ASPETTO ↔ CMP**
-* **ENTITÀ ↔ ETY**
-* **NATURA ↔ LOG**
+* **ASPETTO (structure)** → CMP
+* **ENTITÀ (being)** → ETY
+* **NATURA (process)** → LOG
 
-And their synchronization through:
+These three tables form the **entire core architecture**.
 
-* **DNA_ID** (identity)
-* **STRUCTURE_ID** (coordinate)
-* **BREADCRUMB_ID** (trajectory)
-
-The architecture is simply the **operational reflection** of the ontology.
-
-There is no “design choice” here.
-There is **only ontology → implementation**.
+All other supporting components (JSON descriptors, UI layers, React prototypes, navigators, link tables) exist only to serve this triadic ontology.
+They are **not part of the core**.
 
 ---
 
 ## **6.2 High-Level Architecture Map**
 
-At the highest level, THE BRIDGE consists of **three inseparable layers**:
+At the highest level, THE BRIDGE is composed of **three ontological layers**, each mirrored in implementation.
 
 ### **1. Ontological Layer (What exists)**
 
-The abstract layer defined in TAB30–35: MET, OPE, ATR, and the 56×56 matrix.
+This is defined by the Matrix (56 MET × 56 OPE), TAB30-35, and all philosophical principles.
 
-This layer tells us:
+It defines:
 
-* what an entity can BE
-* what an entity can DO
+* what entities *are allowed to be*
+* what actions they can take
 * how entities relate in universal space
-
-This layer is **Luca’s domain**.
 
 ### **2. Structural Layer (How existence is represented)**
 
-Implemented through the 6 core tables:
+This layer is **exactly three tables**:
 
-* **CMP** (Aspect → structure of each entity type)
-* **ETY** (Being → concrete instantiations)
-* **LOG** (Nature → chronological process history)
-* **CMP_LINK**, **ETY_LINK**, **LOG_LINK** (relationships across entities)
+* **CMP** — Aspect / Structure
+* **ETY** — Entity / Being
+* **LOG** — Nature / Process
 
-This layer is **ontology translated into FileMaker tables**.
+Every entity in the system must exist simultaneously in all three.
+
+There is **no fourth table**.
+There is **no special-case table** for specific domains.
+Everything is expressed through these three.
 
 ### **3. Execution Layer (How movement happens)**
 
-Implemented through:
+This layer contains:
 
-* The **4 Universal Navigators** (Navigate_X, Navigate_Y, Navigate_Z, Universal_Processor)
-* The **SuperTable** (unified view of entity space)
-* The **JSON process descriptors**
-* The **React prototypes** (visual implementation reference for navigation)
+* Navigate_X
+* Navigate_Y
+* Navigate_Z
+* Universal_Processor
+* Process JSON
+* The SuperTable
+* React prototypes (reference implementation)
 
-This layer is **ontology translated into logic and motion**.
-
-All three layers together create a system that is:
-
-* autopoietic
-* deterministic
-* complete
-* Turing-capable
-* universally extensible
+These components “animate” CMP, ETY, and LOG — giving life to the ontology.
 
 ---
 
 ## **6.3 The Core Architectural Idea**
 
-### **“One architecture for all processes.”**
+### **“One ontology. One triad. One architecture.”**
 
-KOOL TOOL’s world includes:
+For KOOL TOOL, different business domains exist:
 
 * phone calls (PHO)
 * customers (CLI)
 * orders (ORD)
-* manufacturing processes (EXT for hair extensions)
+* manufacturing flows (EXT)
 * quality control
-* distribution
-* analytics
+* logistics
 
-Traditional software would create:
+Traditional systems treat each of these as **different designs, different schemas, different scripts**.
 
-* different tables
-* different screens
-* different logic
-* different scripts
+THE BRIDGE treats them all as **one thing: entity types living inside one architecture**.
 
-3P3 creates **one architecture** that contains them all.
+No new tables.
+No new script stacks.
+No new UI frameworks.
 
-New business process?
-No new architecture.
-Just a new **entity type** inside the same architecture.
-
-This is why adding *Quality Control*, for example, becomes:
+Only:
 
 ```
-Add entity type QCX → Add ATR → Done.
+Add entity type → Add ATR → System navigates it.
 ```
 
-No new scripts.
-No new screens.
-No new workflows.
-
-This is the essence of the architecture.
+This is the power of the triadic architecture.
 
 ---
 
-## **6.4 Fixed Coordinates: The Foundation of the Architecture**
+## **6.4 The Three Sacred Codes**
 
-A defining element of the system is that **entity space has fixed coordinates**.
+CMP, ETY, and LOG are held together by **three ontological codes**:
 
-### Why fixed?
+| Code              | Purpose     | Meaning                                                     |
+| ----------------- | ----------- | ----------------------------------------------------------- |
+| **DNA_ID**        | Identity    | “This is the same entity across all perspectives.”          |
+| **STRUCTURE_ID**  | Coordinates | “This entity exists at this point in structure space.”      |
+| **BREADCRUMB_ID** | Trajectory  | “This is where the entity came from and how it is reached.” |
 
-Because:
+Every row in the three tables shares these same codes.
+This is the only way to guarantee:
 
-* ASPETTO must map to consistent structural forms
-* NATURA must map to deterministic actions
-* ENTITÀ must exist as unambiguous identity
+* self-consistency
+* determinism
+* ontological completeness
 
-This is why **CMP**, **ETY**, and **LOG** share:
-
-* identical **DNA_ID**
-* identical **STRUCTURE_ID**
-* identical **BREADCRUMB_ID**
-
-These three codes create a perfect 3D coordinate:
-
-| Axis | Meaning           | Manifestation             |
-| ---- | ----------------- | ------------------------- |
-| X    | Aspect structure  | MET / ATR                 |
-| Y    | Process creation  | OPE                       |
-| Z    | Ontological depth | Children, parents, chains |
-
-Everything built in the architecture traces back to these coordinates.
-
-This is the “sacred geometry” of THE BRIDGE.
+The architecture is not relational-guesswork.
+It is *coordinate-based existence*.
 
 ---
 
 ## **6.5 Universal Navigation as Architectural Principle**
 
-The architecture rejects imperative programming.
-Instead of scripting logic for each business scenario, we give the system:
+The system does not “run scripts.”
+It **navigates entity space** using the universal navigators:
 
-* a **starting point**
-* a **path**
-* a **space definition**
+### **Navigate_X** → Modify aspects (CMP ↔ ETY attribute projection)
 
-Then the system knows how to move.
+### **Navigate_Y** → Create/filter instances (ETY birth, filtering, selection)
 
-This is done through the **4 universal navigators**:
+### **Navigate_Z** → Explore depth (parents, children, chains)
 
-### **Navigate_X** → modify attributes
+### **Universal_Processor** → Orchestrate complex movement through all axes
 
-### **Navigate_Y** → create/filter instances
+This replaces:
 
-### **Navigate_Z** → explore depth
-
-### **Universal_Processor** → orchestrate paths
-
-These navigators replace:
-
-* conditional logic
+* imperative logic
 * branching scripts
-* specialized workflows
-* procedural programs
+* conditional workflows
+* domain-specific procedural programs
 
-Because the architecture is **declarative**:
-“You tell the system where to go, not what to do.”
+You give the system:
+
+* a start point
+* a structural space
+* a trajectory
+
+The architecture does the rest.
 
 ---
 
 ## **6.6 The Architecture in Practice (Real KOOL TOOL Examples)**
 
-### **PHO (Phone Call) Implementation**
+### **PHO (Phone Calls)**
 
-PHO uses:
+PHO template resides in **CMP**.
+Actual calls reside in **ETY**.
+History of call events resides in **LOG**.
 
-* CMP → “PHO template”
-* ETY → each real incoming/outgoing call
-* LOG → sequence of call events
+Adding ATR like:
 
-When Luca adds:
+* duration
+* caller_id
+* call_reason
 
-```
-ATR: call_reason  
-ATR: caller_id  
-ATR: duration
-```
+automatically expands the SuperTable and entity capabilities.
 
-That automatically defines:
+### **EXT (Manufacturing Hair Extensions)**
 
-* SuperTable columns
-* allowed operations
-* coordinates
-* history points
+The EXT entity type exists in the same triad:
 
-No developer writes logic for this.
-The architecture produces the behavior.
+* CMP_EXT — describes structure of hair extension items
+* ETY_EXT — each production run
+* LOG_EXT — process actions during manufacturing
 
-### **EXT (Hair Extension Production)**
+No custom workflows.
+No new architecture.
+Only new **entity definitions**.
 
-EXT follows the same shape:
+### **ORD and CLI** behave identically.
 
-* the template describes one “manufacturable item”
-* instances describe actual production runs
-* logs describe actions taken in manufacturing
-
-Again, the architecture shapes behavior.
-You only define *entities*, not workflows.
-
-### **ORD (Orders)** and **CLI (Customers)** behave similarly.
-
-In all cases:
-
-* No new screens
-* No new script sets
-* No additional workflows
-* No deviations in architecture
-
-Only one universal shape.
+Everything lives inside the same ontological engine.
 
 ---
 
 ## **6.7 Architecture Guarantees**
 
-The architecture ensures:
+The triadic architecture provides:
 
-### **1. Scalability**
+### **1. Determinism**
 
-Each new entity type increases total functionality but decreases code (K → 1).
+Same coordinates → same behavior.
 
-### **2. Determinism**
+### **2. Scalability**
 
-Same input, same coordinates → same outcome.
+Every new entity type increases value while keeping K low (approaching 1).
 
-### **3. Extensibility**
+### **3. Universal Compatibility**
 
-Add ATR or MET and new possibilities appear everywhere simultaneously.
+Any domain maps onto the same structure.
 
-### **4. Self-Documentation**
+### **4. Autopoiesis**
 
-Everything in CMP ↔ ETY ↔ LOG describes itself.
+The system describes itself using itself (CMP ↔ ETY ↔ LOG symmetry).
 
-### **5. Universality**
+### **5. Complete Extensibility**
 
-Any business domain can be represented:
+Adding ATR creates global system changes instantly.
 
-* production
-* logistics
-* customer management
-* finance
-* HR
-* project management
-* call center flows
+### **6. Zero Architectural Drift**
 
-Same architecture.
-Same rules.
-Same navigators.
+Because there are only 3 tables, there is no fragmentation.
 
 ---
 
-## **6.8 Conclusion of the Architecture Overview**
+## **6.8 Conclusion**
 
-This chapter defines the foundation for the next chapters:
+The architecture of THE BRIDGE is fundamentally defined by:
 
-* the **6 core tables**
-* **instance manager**
-* **process manager**
-* **bootstrap**
-* **React/WebViewer implementation**
+* **one ontology**,
+* **three tables**,
+* **three sacred codes**,
+* **universal navigation**.
+
+All future chapters now build on this triadic structure:
+
+* **CMP / ETY / LOG explained in depth**
+* **Instance Manager**
+* **Process Manager**
+* **Bootstrap creation of 336 records**
+* **WebViewer / React implementation**
+* **Testing & validation**
