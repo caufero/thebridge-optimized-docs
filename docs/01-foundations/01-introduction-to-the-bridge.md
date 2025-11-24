@@ -40,7 +40,7 @@ This is the first axiom of 3P3:
 > **Every entity must exist in all three tables.**
 > One record in CMP, one in ETY, and many in LOG.
 
-These three records are not “connected”—they are **one being** observed from three viewpoints.
+These three records are not just “connected”—they are **one being** observed from three viewpoints.
 
 The unifying force is the **DNA_ID**, the sacred identifier shared across CMP, ETY, LOG.
 It binds the three essences into one entity, one movement, one identity.
