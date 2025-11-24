@@ -249,11 +249,11 @@ Together, these produce:
 
 The system’s depth is philosophical, but its implementation is brutally simple:
 
-### **CMP_TABLE — structural reality**
+### **CMP** Table — structural reality**
 
-### **ETY_TABLE — existential reality**
+### **ETY** Table — existential reality**
 
-### **LOG_TABLE — process reality**
+### **LOG** Table — process reality**
 
 Nothing else is needed.
 
