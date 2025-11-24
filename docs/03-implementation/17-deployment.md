@@ -64,7 +64,8 @@ TheBridge.fmp12 (File Name)
 2. Go to **Databases > Upload Database**
 3. Upload TheBridge.fmp12
 4. Ensure it opens without errors
-5. Set **Auto-Open** ON
+5. Activate Web Direct so it can also be accessed through the browser
+6. Set **Auto-Open** ON
 
 ### **17.3.3 Validate Database Encryption (If Applied)**
 
