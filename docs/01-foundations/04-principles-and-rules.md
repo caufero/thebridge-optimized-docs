@@ -24,8 +24,6 @@ They ensure that the system is:
 * self-consistent
 * infinitely extensible
 
-The uploaded document implies these principles repeatedly through the treatment of ASPETTO, NATURA, ENTITÀ; MET/OPE symmetry; templates; ATR composition; tripartition; and the CMP–ETY–LOG unity.
-
 Below are the governing laws.
 
 ---
