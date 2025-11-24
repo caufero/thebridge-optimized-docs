@@ -103,7 +103,6 @@ Reusable components that templates combine to create domain-specific structures.
 Combined through STRUCTURE_ID, these elements allow The Bridge to model:
 
 * sales pipelines
-* hospital systems
 * production processes
 * logistics flows
 * CRM processes
