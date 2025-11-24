@@ -280,10 +280,3 @@ This chapter defines the foundation for the next chapters:
 * **process manager**
 * **bootstrap**
 * **React/WebViewer implementation**
-
-From this point forward, we will no longer discuss the “why.”
-It is now fully established.
-
-We now move into the **“how.”**
-If you want, I can continue **Chapter 7: The 6 Core Tables** immediately.
-
