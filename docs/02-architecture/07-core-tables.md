@@ -44,7 +44,7 @@ Therefore:
 | **ETY** | ENTITÀ      | The entity’s current state in the world.       |
 | **LOG** | NATURA      | The entity’s history – every change or action. |
 
-Every entity—PHO calls, CLI customers, ORD orders, EXT manufacturing batches, MET universal attributes, OPE operations, even template definitions—is represented in *all three* tables.
+Every entity — PHO phone calls, CLI customers, ORD orders, EXT manufacturing batches, MET universal attributes, OPE operations, even template definitions — is represented in *all three* tables.
 
 This is the triadic ontology of 3P3.
 
