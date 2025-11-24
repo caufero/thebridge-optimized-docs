@@ -87,9 +87,9 @@ Where:
 
 ## **2.5 Practical Interpretation for FileMaker**
 
-The guide states that traditional FileMaker development requires dozens of tables, hundreds of scripts, and many layouts.
+Traditional FileMaker development requires dozens of tables, hundreds of scripts, and many layouts.
 
-Under 3P3, the ontology collapses the system into:
+However, under 3P3, the ontology collapses the system into:
 
 * **3 tables** (CMP, ETY, LOG)
 * **4 scripts** (the Universal Navigators)
