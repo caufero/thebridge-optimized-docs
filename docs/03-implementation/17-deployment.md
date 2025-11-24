@@ -55,16 +55,14 @@ THE BRIDGE normally deploys as:
 ### **17.3.1 Recommended Deployment Structure**
 
 ```
-TheBridge_Core.fmp12
-TheBridge_UI.fmp12            (optional, for modular UI)
-TheBridge_DomainTemplates.fmp12
+TheBridge.fmp12 (File Name)
 ```
 
 ### **17.3.2 Upload Procedure**
 
 1. Open FileMaker Server Admin Console
 2. Go to **Databases > Upload Database**
-3. Upload TheBridge_Core.fmp12
+3. Upload TheBridge.fmp12
 4. Ensure it opens without errors
 5. Set **Auto-Open** ON
 
@@ -217,15 +215,13 @@ The triad must be preserved:
 ### **17.9.1 Backup Intervals**
 
 * **Daily full backup**
-* **Hourly incremental backup (LOG only)**
 * **Weekly offsite backup**
 
 ### **17.9.2 Example Backup Folder Structure**
 
 ```
-/backups/daily/TheBridge_Core_2025-11-23.fmp12
-/backups/hourly/logs/LOG_2025-11-23_14-00.json
-/backups/offsite/weekly/TheBridge_Core_2025-W47.fmp12
+/backups/daily/TheBridge_2025-11-23.fmp12
+/backups/offsite/weekly/TheBridge_2025-W47.fmp12
 ```
 
 ### **17.9.3 Post-Backup Validation Script**
