@@ -60,7 +60,7 @@ It holds:
 
 It is where the entity declares:
 
-> “This is what I am allowed to be.”
+> “This is me, and this is what I am allowed to be.”
 
 The sample CMP template for PHO shows MET and ATR unified into one structure JSON.
 
