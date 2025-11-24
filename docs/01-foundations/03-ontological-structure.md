@@ -113,15 +113,14 @@ It is the seat of becoming.
 
 ### **3.3.2 The ETY JSON State**
 
-The ETY_JSON (as shown in the uploaded document) expresses:
+The ETY_JSON expresses:
 
-* universal MET attributes
-* domain-specific ATR attributes
-* any operationally introduced attributes
-* timestamps
-* derived calculations
+* states of universal MET attributes
+* states of domain-specific ATR attributes
+* states of any operationally introduced attributes
+* derived calculations regarding an entity
 
-In the document’s glossary, ENTITÀ is described as “integration and becoming,” and the ETY table holds this integrated state.
+ENTITÀ is described as “integration and becoming,” and the ETY table holds this integrated state.
 
 The ETY JSON is always the translation of the structure (ASPETTO) and the operations (NATURA) into a single unified substance.
 
