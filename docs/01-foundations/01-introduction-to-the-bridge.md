@@ -31,9 +31,9 @@ In FileMaker, the three ontological essences are expressed through **three table
 
 | Ontology    | Table         | Meaning                                                            |
 | ----------- | ------------- | ------------------------------------------------------------------ |
-| **ASPETTO** | **CMP_TABLE** | The structure, template, and structural identity of the entity     |
-| **ENTITÀ**  | **ETY_TABLE** | The being/instance of the entity (actual data, current state)      |
-| **NATURA**  | **LOG_TABLE** | The history, process, and actions the entity performs or undergoes |
+| **ASPETTO** | **CMP** | The structure, template, and structural identity of the entity     |
+| **ENTITÀ**  | **ETY** | The being/instance of the entity (actual data, current state)      |
+| **NATURA**  | **LOG** | The history, process, and actions the entity performs or undergoes |
 
 This is the first axiom of 3P3:
 
