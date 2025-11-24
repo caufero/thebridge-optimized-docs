@@ -49,8 +49,6 @@ Every entity has:
 * Symbol: 🟡
 * Materialized in FileMaker as **ETY** table (State/Being)
 
-This mapping from ontology → FileMaker implementation appears explicitly in the referenced schema diagram.
-
 ---
 
 ## **2.3 One Entity = Three Perspectives**
@@ -84,8 +82,6 @@ Where:
 * **1D** = One Domain
 * **1A** = One Algorithm
 * **1E** (recursive) = One Entity again
-
-This formula appears in the ontology section and asserts that the *entity itself* contains everything necessary to express its structure, process, and being at once.
 
 ---
 
