@@ -1,6 +1,6 @@
-# **Chapter 9 — Bootstrap**
+# **Chapter 11 — Bootstrap**
 
-## **9.1 Purpose of the Bootstrap Process**
+## **11.1 Purpose of the Bootstrap Process**
 
 Bootstrap is the foundational initialization of THE BRIDGE.
 It creates the **336 ontological entities** required for the system to exist:
@@ -19,7 +19,7 @@ Bootstrap is executed **once**, at system initialization, and establishes the en
 
 ---
 
-## **9.2 Goals of Bootstrap**
+## **11.2 Goals of Bootstrap**
 
 Bootstrap ensures that:
 
@@ -34,11 +34,11 @@ It creates the *world* in which business entities can exist.
 
 ---
 
-## **9.3 Bootstrap Entity Types**
+## **11.3 Bootstrap Entity Types**
 
 Bootstrap creates two categories of ontological entities:
 
-### **9.3.1 MET Entities (Universal Attributes)**
+### **11.3.1 MET Entities (Universal Attributes)**
 
 Characteristics:
 
@@ -51,7 +51,7 @@ MET definitions are derived from the ontological matrix and encoded during boots
 
 ---
 
-### **9.3.2 OPE Entities (Universal Operations)**
+### **11.3.2 OPE Entities (Universal Operations)**
 
 Characteristics:
 
@@ -64,7 +64,7 @@ Each OPE is grounded in its MET and matrix behavior code.
 
 ---
 
-## **9.4 Structure of Bootstrap Entities**
+## **11.4 Structure of Bootstrap Entities**
 
 Bootstrap ensures that MET and OPE entities follow the full triad:
 
@@ -86,11 +86,11 @@ Bootstrapping these ensures that attribute mutation and operation execution beco
 
 ---
 
-## **9.5 Creation Sequence**
+## **11.5 Creation Sequence**
 
 Bootstrap follows a strict creation order to ensure structural integrity:
 
-### **9.5.1 Step 1 — Create MET CMP Records**
+### **11.5.1 Step 1 — Create MET CMP Records**
 
 Each universal attribute is created in CMP as:
 
@@ -104,7 +104,7 @@ default_values   = initial values
 validation_rules = matrix-derived rules
 ```
 
-### **9.5.2 Step 2 — Create MET ETY Records**
+### **11.5.2 Step 2 — Create MET ETY Records**
 
 Each MET receives an ETY entry:
 
@@ -113,7 +113,7 @@ dna_id = METxxx
 json_data = current MET state
 ```
 
-### **9.5.3 Step 3 — Create MET LOG Records**
+### **11.5.3 Step 3 — Create MET LOG Records**
 
 Each MET receives a LOG entry describing its origin:
 
@@ -124,7 +124,7 @@ operation_id = OPE_CREATE_ENTITY
 
 ---
 
-### **9.5.4 Step 4 — Create OPE CMP Records**
+### **11.5.4 Step 4 — Create OPE CMP Records**
 
 Each universal operation is defined structurally:
 
@@ -135,17 +135,17 @@ behavior_rules   = matrix-derived logic
 applicable_MET   = which attributes it affects
 ```
 
-### **9.5.5 Step 5 — Create OPE ETY Records**
+### **11.5.5 Step 5 — Create OPE ETY Records**
 
 Each operation receives its present instantiation.
 
-### **9.5.6 Step 6 — Create OPE LOG Records**
+### **11.5.6 Step 6 — Create OPE LOG Records**
 
 Each operation receives its historical origin entry.
 
 ---
 
-## **9.6 Structural Guarantees Created by Bootstrap**
+## **11.6 Structural Guarantees Created by Bootstrap**
 
 Bootstrap ensures that the system begins in a state of complete ontological readiness:
 
@@ -158,7 +158,7 @@ Bootstrap ensures that the system begins in a state of complete ontological read
 
 ---
 
-## **9.7 Bootstrap and the 56×56 Matrix**
+## **11.7 Bootstrap and the 56×56 Matrix**
 
 The bootstrap process reads the 56×56 matrix and uses it to:
 
@@ -172,7 +172,7 @@ This ensures that every attribute and operation is linked to ontology before any
 
 ---
 
-## **9.8 Bootstrap Completeness**
+## **11.8 Bootstrap Completeness**
 
 A bootstrap is considered complete when:
 
@@ -187,7 +187,7 @@ Only then can domain-level templates (TPL) be safely introduced.
 
 ---
 
-## **9.9 Post-Bootstrap System State**
+## **11.9 Post-Bootstrap System State**
 
 When bootstrap finishes, the system contains:
 
@@ -213,7 +213,7 @@ Bootstrap is the foundation upon which all domain processes rest.
 
 ---
 
-## **9.10 Summary**
+## **11.10 Summary**
 
 Bootstrap initializes the universal ontology:
 
