@@ -20,23 +20,23 @@ The goal when building the schema is to create the *least amount of physical str
 ## **13.2 Principles for Schema Construction**
 
 1. **Every entity is represented in three manifestations (CMP–ETY–LOG).**
-2. **All attributes must be stored inside JSON containers.**
-3. **No domain-specific tables are allowed.**
-4. **No fields may be added that bypass attribute definitions (MET/ATR).**
-5. **All mutations must be handled by the Process Manager.**
-6. **All entity creation must be handled by the Instance Manager.**
-7. **Schema must be stable and never evolve with domain needs.**
-8. **The only evolving part is the ontology (templates, attributes, operations).**
+2. **No domain-specific tables are allowed.**
+3. **No fields may be added that bypass attribute definitions (MET/ATR).**
+4. **All mutations must be handled by the Templates / Process Manager.**
+5. **All entity creation must be handled by the Instance Manager.**
+6. **Schema must be stable and never evolve with domain needs.**
+7. **The only evolving part is the ontology (templates, attributes, operations).**
+   
 
 This creates a universal, domain-free architecture.
 
 ---
 
-# **13.3 CMP_TABLE (Structural Manifestation)**
+# **13.3 CMP Table (Structural Manifestation)**
 
 ### **13.3.1 Purpose**
 
-CMP_TABLE defines the structural identity of every entity:
+CMP Table defines the structural identity of every entity:
 
 * what it *is*
 * which MET attributes it supports
@@ -68,11 +68,11 @@ Only structural information is stored in CMP.
 
 ---
 
-# **13.4 ETY_TABLE (Current State Manifestation)**
+# **13.4 ETY Table (Current State Manifestation)**
 
 ### **13.4.1 Purpose**
 
-ETY_TABLE stores the live state of every entity in the system.
+ETY Table stores the live state of every entity in the system.
 
 An ETY row is the only place where the “current reality” of an entity exists.
 
@@ -110,11 +110,11 @@ No additional domain fields may be added.
 
 ---
 
-# **13.5 LOG_TABLE (Historical Manifestation)**
+# **13.5 LOG Table (Historical Manifestation)**
 
 ### **13.5.1 Purpose**
 
-LOG_TABLE stores the immutable history of every change made to any entity via the Process Manager.
+LOG Table stores the immutable history of every change made to any entity via the Process Manager.
 
 A LOG entry:
 
@@ -151,19 +151,19 @@ LOG must remain immutable.
 
 To maintain performance and deterministic queries, the following fields require indexes:
 
-### **CMP_TABLE**
+### **CMP Table**
 
 * dna_id
 * structure_id
 
-### **ETY_TABLE**
+### **ETY Table**
 
 * dna_id
 * structure_id
 * breadcrumb_id
 * entity_type
 
-### **LOG_TABLE**
+### **LOG Table**
 
 * dna_id
 * timestamp
