@@ -207,11 +207,11 @@ Everything has NATURA.
 
 ### **PHO — Phone Call**
 
-| Perspective | Table | Example                                          |
-| ----------- | ----- | ------------------------------------------------ |
-| ASPETTO     | CMP   | `TPL_PHO_001` structure defines what a call *is* |
-| ENTITÀ      | ETY   | Actual calls: `PHO00001`, `PHO00002`             |
-| NATURA      | LOG   | Call events: ring → answer → duration → notes    |
+| Perspective | Table | Example                                               |
+| ----------- | ----- | ----------------------------------------------------- |
+| ASPETTO     | CMP   | `TPL_PHO_001` structure defines what a call *is*      |
+| ENTITÀ      | ETY   | Current state of actual calls: `PHO00001`, `PHO00002` |
+| NATURA      | LOG   | Call events: ring → answer → duration → notes         |
 
 ### **CLI — Customer**
 
