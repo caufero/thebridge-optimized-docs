@@ -227,9 +227,9 @@ LOG logs bootstrap creation and later modifications.
 
 ### **OPE — Universal Operations**
 
-CMP describes OPE009 (SET_DURATION).
-ETY tracks its current registration.
-LOG logs when operations are executed.
+* CMP describes OPE009 (SET_DURATION).
+* ETY tracks its current registration.
+* LOG logs when operations are executed.
 
 This is the absolute consistency of the ontology.
 
