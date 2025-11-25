@@ -197,7 +197,7 @@ This ensures deterministic behavior.
                ┌───────────┐
                │   ETY     │   (Current State)
                └─────┬─────┘
-         dna_id       │       dna_id
+         dna_id      │       dna_id
                      ▼
                ┌───────────┐
                │   LOG     │   (History)
