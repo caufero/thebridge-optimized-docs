@@ -1,4 +1,4 @@
-# **CHAPTER 10 — PROCESS (TEMPLATE) MANAGER**
+# **CHAPTER 10 — TEMPLATES (PROCESS MANAGER)**
 
 ### *The Ontology & Template Engine of The Bridge*
 
