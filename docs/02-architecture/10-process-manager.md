@@ -36,8 +36,13 @@ In simple terms:
 
 # **10.3 Multiple-Panel Architecture**
 
-The Process Manager UI is among a number of coordinated panels.
-Bootstrap, Attributes, **Templates (Process Manager)**, Instances (Instance Manager), SuperTable, Tests
+The Process Manager UI part of a number of coordinated panels of a single UI architecture:
+
+* Bootstrap
+* Attributes
+* **Templates (Process Manager)**
+* Instances (Instance Manager)
+* SuperTable, Tests
 
 ---
 
