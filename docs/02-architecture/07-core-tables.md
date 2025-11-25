@@ -149,7 +149,7 @@ Every entity has an ETY row:
 * ORD01923 → the status of an order
 * TPL_PHO_001 → ETY manifestation of a template (yes, templates have state!)
 
-### **ETY Fields (Conceptual)**
+### **ETY Fields**
 
 * dna_id
 * entity_type
@@ -164,7 +164,7 @@ ETY is the **current living snapshot** in ENTITÀ perspective.
 
 ---
 
-## **7.5 Table Three: LOG (NATURA — Process/History Manifestation)**
+## **7.5 Table Three: LOG (NATURA — History Manifestation)**
 
 LOG stores:
 
