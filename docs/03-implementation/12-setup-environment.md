@@ -85,9 +85,9 @@ For large deployments, 32–64 GB RAM is preferable.
 
 Three core tables must exist and remain immutable in name and structure:
 
-* **CMP_TABLE**
-* **ETY_TABLE**
-* **LOG_TABLE**
+* **CMP** Table
+* **ETY** Table
+* **LOG** Table
 
 All structures must follow the definitions established during bootstrap.
 
