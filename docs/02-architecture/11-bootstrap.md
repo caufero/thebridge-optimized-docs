@@ -5,15 +5,15 @@
 Bootstrap is the foundational initialization of THE BRIDGE.
 It creates the **336 ontological entities** required for the system to exist:
 
-* 56 **MET** (universal attributes)
+* 56 **MET** in CMP (universal attributes)
 * 56 **MET** in ETY
 * 56 **MET** in LOG
-* 56 **OPE** (universal operations)
+* 56 **OPE** in CMP (universal operations)
 * 56 **OPE** in ETY
 * 56 **OPE** in LOG
 
 These entities form the **universal vocabulary** of structure and behavior.
-Without them, no other entity—PHO, CLI, ORD, EXT, TPL, or any future type—can exist or operate.
+Without them, no other entity — PHO, CLI, ORD, EXT, TPL, or any future type — can exist or operate.
 
 Bootstrap is executed **once**, at system initialization, and establishes the entire ontological grid the architecture depends on.
 
