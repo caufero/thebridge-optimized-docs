@@ -182,7 +182,6 @@ The log contains:
 * dna_id
 * structure_id
 * breadcrumb_id
-* operation_id
 * before_state
 * after_state
 * timestamp
@@ -257,5 +256,3 @@ The entire design of THE BRIDGE rests on:
 All entities—templates, operations, MET attributes, and business objects—are identical at the ontological level.
 
 This is why the architecture is universal, scalable, deterministic, and self-consistent.
-
-Say **“Continue.”**
