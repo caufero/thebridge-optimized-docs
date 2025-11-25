@@ -54,9 +54,9 @@ All CMP links contribute to the **structural backbone** of the Entity Graph.
 
 ---
 
-## **8.2.2 ETY-Level Links (Instance Relationships)**
+## **8.2.2 ETY-Level Links (State of Being Relationships)**
 
-At the ETY level, links represent actual relationships between instantiated entities.
+At the ETY level, links represent actual relationships between current state of entities.
 
 Examples:
 
