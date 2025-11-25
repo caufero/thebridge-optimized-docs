@@ -140,20 +140,14 @@ CMP is the **structural spine** of the ontology.
 
 ## **7.4 Table Two: ETY (ENTITÀ — Current State Manifestation)**
 
-ETY represents the **living entity** at this moment.
+ETY represents the current state **living entity** at this moment.
 
 Every entity has an ETY row:
 
-* PHO25001 → a real phone call that happened
-* CLI03002 → an actual customer in the system
-* ORD01923 → a real order
-* MET006 → ETY manifestation of the universal attribute
-* OPE009 → ETY manifestation of a universal operation
+* PHO25001 → the current state of a phone call that happened
+* CLI03002 → what's currently up with an actual customer in the system
+* ORD01923 → the status of an order
 * TPL_PHO_001 → ETY manifestation of a template (yes, templates have state!)
-
-The existence of ETY for templates and meta-entities is explicitly confirmed by bootstrap:
-
-> “Each MET and OPE exists as CMP, ETY, LOG.”
 
 ### **ETY Fields (Conceptual)**
 
