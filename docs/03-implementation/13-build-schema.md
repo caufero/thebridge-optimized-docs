@@ -7,11 +7,10 @@ It is not a domain-driven schema, nor does it resemble traditional software data
 
 There are only three core tables:
 
-* **CMP_TABLE** — structural manifestation (ASPETTO)
-* **ETY_TABLE** — current state manifestation (ENTITÀ)
-* **LOG_TABLE** — historical manifestation (NATURA)
+* **CMP Table** — structural manifestation (ASPETTO)
+* **ETY Table** — current state manifestation (ENTITÀ)
+* **LOG Table** — historical manifestation (NATURA)
 
-All other tables are optional helpers and must never replace, duplicate, or interfere with the triad.
 The schema is intentionally simple so that all complexity is expressed through ontology, not through database structure.
 
 The goal when building the schema is to create the *least amount of physical structure* capable of expressing the *full ontology*.
