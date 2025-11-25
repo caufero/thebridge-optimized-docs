@@ -80,7 +80,6 @@ They support:
 * navigation flows
 * cascading attribute updates
 * graph traversal
-* instance-level filtering
 * contextual UI behavior
 * process sequencing
 
