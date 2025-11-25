@@ -167,16 +167,18 @@ All external systems should communicate via JSON where possible.
 
 To maintain ontological integrity:
 
-1. **Do not modify CMP_TABLE structure after bootstrap.**
-2. **Do not manually edit ETY_TABLE records.**
-3. **Do not delete LOG_TABLE entries.**
-4. **Do not bypass the Process Manager.**
-5. **Do not bypass the Instance Manager.**
-6. **Do not create entities without proper structural definitions.**
-7. **Do not alter the structure_id of any record.**
-8. **Do not create domain-specific tables.**
-9. **Do not implement custom workflows outside OPE logic.**
-10. **Do not run scripts that mutate entities without generating LOG entries.**
+1. **Do not modify CMP table structure after bootstrap.**
+2. **Do not manually edit ETY table records.**
+3. **Do not delete LOG table entries.**
+4. **Do not bypass the Bootstrap.**
+5. **Do not bypass the Specific Attributes Manager.**
+6. **Do not bypass the Templates / Process Manager.**
+7. **Do not bypass the Instance Manager.**
+8. **Do not create entities without proper structural definitions.**
+9. **Do not alter the structure_id of any record.**
+10. **Do not create domain-specific tables.**
+11. **Do not implement custom workflows outside OPE logic.**
+12. **Do not run scripts that mutate entities without generating LOG entries.**
 
 Violating these rules breaks the ontology.
 
