@@ -1,6 +1,6 @@
-# **Chapter 9 — Process Manager**
+# **Chapter 10 — Process Manager**
 
-## **9.1 Purpose of the Process Manager**
+## **10.1 Purpose of the Process Manager**
 
 The **Process Manager** is the engine that governs the execution of all operations (OPE) on any entity in THE BRIDGE.
 Where the Instance Manager governs **entity birth**, the Process Manager governs **entity transformation**.
@@ -26,7 +26,7 @@ The Process Manager ensures that:
 
 ---
 
-## **9.2 The Nature of a Process in THE BRIDGE**
+## **10.2 The Nature of a Process in THE BRIDGE**
 
 A **process** is defined as:
 
@@ -48,7 +48,7 @@ All processes, no matter their domain, follow the same universal shape.
 
 ---
 
-## **9.3 OPE: The Core Driver of Processes**
+## **10.3 OPE: The Core Driver of Processes**
 
 Every change in THE BRIDGE is triggered by executing an **OPE** (operation).
 
@@ -74,7 +74,7 @@ By using OPE definitions, the Process Manager eliminates the need for conditiona
 
 ---
 
-## **9.4 The Process Execution Lifecycle**
+## **10.4 The Process Execution Lifecycle**
 
 When the Process Manager executes an operation on an entity, it performs the following sequence:
 
@@ -176,7 +176,7 @@ This enables subsequent steps in larger processes.
 
 ---
 
-## **9.5 Multi-Step Processes**
+## **10.5 Multi-Step Processes**
 
 Processes often involve multiple consecutive OPE executions.
 
@@ -201,7 +201,7 @@ The Process Manager chains these operations without requiring domain-specific sc
 
 ---
 
-## **9.6 Hierarchical Processes (Depth Navigation)**
+## **10.6 Hierarchical Processes (Depth Navigation)**
 
 Certain processes create child entities or extend a hierarchical chain.
 
@@ -222,7 +222,7 @@ Depth in the Entity Graph is preserved and becomes navigable through Z-axis trav
 
 ---
 
-## **9.7 Process Manager and the Universal Navigators**
+## **10.7 Process Manager and the Universal Navigators**
 
 The Process Manager is invoked by the three navigators:
 
@@ -242,7 +242,7 @@ The Process Manager executes the actual mutation each time.
 
 ---
 
-## **9.8 Determinism and Predictability**
+## **10.8 Determinism and Predictability**
 
 Because all processes are:
 
@@ -265,7 +265,7 @@ Determinism is a core property of THE BRIDGE.
 
 ---
 
-## **9.9 Error Handling in Processes**
+## **10.9 Error Handling in Processes**
 
 The Process Manager enforces strict constraints:
 
@@ -279,7 +279,7 @@ Rejected processes are never written to LOG, ensuring the entity’s NATURA reco
 
 ---
 
-## **9.10 Summary**
+## **10.10 Summary**
 
 The Process Manager provides:
 
