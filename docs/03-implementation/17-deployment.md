@@ -209,9 +209,9 @@ Security is critical because CMP, ETY, and LOG contain the ontology and entire s
 
 The triad must be preserved:
 
-* CMP_TABLE
-* ETY_TABLE
-* LOG_TABLE
+* CMP Table
+* ETY Table
+* LOG Table
 
 ### **17.9.1 Backup Intervals**
 
