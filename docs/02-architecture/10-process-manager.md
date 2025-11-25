@@ -1,294 +1,252 @@
-# **Chapter 10 — Process Manager**
+# **CHAPTER 10 — PROCESS MANAGER**
 
-## **10.1 Purpose of the Process Manager**
+### *The Ontology & Template Engine of The Bridge*
 
-The **Process Manager** is the engine that governs the execution of all operations (OPE) on any entity in THE BRIDGE.
-Where the Instance Manager governs **entity birth**, the Process Manager governs **entity transformation**.
+## **10.1 Introduction**
 
-Every mutation, transition, update, or process step—no matter how simple or complex—is executed through the Process Manager using the ontological rules defined by:
+The Process Manager is the **universe generator** — the environment where the organization’s business ontology is defined and compiled into structural templates, attribute definitions, workflows, states, transitions, and triggers.
 
-* CMP (structure)
-* ETY (current state)
-* LOG (process history)
-* OPE (universal operations)
-* MET (universal attributes)
-* ATR (specific attributes)
-* The sacred codes (DNA_ID, STRUCTURE_ID, BREADCRUMB_ID)
-* The Universal Navigators (X, Y, Z)
-
-The Process Manager ensures that:
-
-1. All state changes respect the ontology.
-2. Every OPE is performed uniformly across all entity types.
-3. LOG stores a complete and immutable history of every execution.
-4. Navigation flows remain deterministic.
-5. No domain-specific procedural logic is required.
+Through it, managers define the **ASPETTO** of every process (CMP templates), the **NATURA** that governs behavior (workflow + triggers), and the **ENTITÀ** scaffolding (ETY orchestration).
+Once saved, these definitions automatically generate the UI, operational logic, and entity lifecycle rules for the entire organization.
 
 ---
 
-## **10.2 The Nature of a Process in THE BRIDGE**
+# **10.2 What the Process Manager Actually Does**
 
-A **process** is defined as:
+The Process Manager constructs the living ontology of the organization.
 
-> “A sequence of operations acting upon an entity, producing a new state, recorded in NATURA, and aligned with ASPETTO.”
+When a manager defines a process inside it:
 
-This is not an imperative script.
-A process is a *movement through entity space* using the universal navigators.
+* The structural template is created in **CMP**
+* The workflow control layer is created in **ETY**
+* Logging patterns are created in **LOG**
+* The user interface is generated
+* Operational permissions and transitions are enforced
 
-Examples of processes:
+This means:
 
-* Changing `lifecycle_state` of a phone call
-* Assigning a customer to an order
-* Recording a production step for a hair extension batch
-* Updating deadlines, durations, or priorities
-* Linking a task as a child of another entity through depth navigation
-* Any OPE-driven mutation of attributes
+> **A process defined here = a business capability that now exists.**
+> **A process not defined here = a business capability the company does not have.**
 
-All processes, no matter their domain, follow the same universal shape.
+In simple terms:
 
----
-
-## **10.3 OPE: The Core Driver of Processes**
-
-Every change in THE BRIDGE is triggered by executing an **OPE** (operation).
-
-OPE records define:
-
-* operation type
-* required MET
-* valid attributes
-* behavior codes (from the matrix)
-* allowed transitions
-
-The Process Manager reads the matching OPE entry and executes its semantics over the ETY record.
-
-Examples:
-
-* `OPE006_SET_TIMESTAMP`
-* `OPE012_SET_NAME`
-* `OPE030_ASSIGN_TO`
-* `OPE009_SET_DURATION`
-* `OPE010_UPDATE_LIFECYCLE_STATE`
-
-By using OPE definitions, the Process Manager eliminates the need for conditional logic—everything is declarative and derived from the 56×56 matrix.
+### **The Process Manager defines what the organization is capable of doing.**
 
 ---
 
-## **10.4 The Process Execution Lifecycle**
+# **10.3 Three-Panel Architecture**
 
-When the Process Manager executes an operation on an entity, it performs the following sequence:
+*(From the official interface specification)*
 
+The Process Manager UI has three coordinated panels.
+These panels together construct the ontological structure of a process.
+
+---
+
+## **10.3.1 Panel 1 — Process Hierarchy (TreeView)**
+
+This left panel governs **ontology depth**.
+
+* Displays all processes in a parent–child tree
+* Defines hierarchical and ontological relationships
+* Supports:
+
+  * **Add** process
+  * **Nest** under parent
+  * **Re-order**
+  * **Move**
+  * **Delete**
+* Example hierarchy:
+  `COMPANY → TASK → PHONE CALL → FOLLOW-UP`
+
+This is the **ASPETTO vertical axis**.
+
+---
+
+## **10.3.2 Panel 2 — Attributes & Meta-Properties**
+
+The second panel defines the **internal structure** of a process template.
+
+Here, the manager configures:
+
+* Attributes (ATR)
+* Meta-attributes (MET references)
+* Domains
+* Validation rules
+* Data types
+* Default values
+* Security & authorization rules
+* Searchability
+* Temporal rules (versioning, retention)
+* Trigger-points inside attributes
+* UI representation
+
+Once attributes are defined:
+
+### The Bridge can automatically generate the UI for the instance manager.
+
+No layout-building is necessary.
+The template itself **is** the form definition.
+
+---
+
+## **10.3.3 Panel 3 — Composition (Workflow, Relationships & Triggers)**
+
+The third panel defines how the process *behaves*.
+
+Here, the manager configures:
+
+* **Workflow states**
+* **Transitions**
+* **Conditions**
+* **Automatic triggers**
+* **Manual triggers**
+* **Dependencies between processes**
+* **Inter-process orchestration**
+* **Operational relationships**
+
+This panel defines the **NATURA** of the process:
+its behavior, reactions, and life cycle.
+
+---
+
+# **10.4 What the Process Manager Generates Internally**
+
+When a manager presses **Save**, the system compiles the ontology into four layers:
+
+---
+
+## **10.4.1 CMP (ASPETTO)**
+
+The template is compiled into a structural JSON object:
+
+* Structural definition
+* Attribute list
+* Domain rules
+* Data types
+* Allowed operations
+* Validation rules
+* UI generation map
+* Trigger definitions
+* Workflow structure
+
+This becomes the **template record** for future instances.
+
+---
+
+## **10.4.2 ETY (ENTITÀ)**
+
+The Process Manager defines:
+
+* Initial workflow state
+* Allowed actions
+* Controllers and permissions
+* Orchestration rules
+* Timer rules
+* State conditions
+
+This becomes the **operational control layer** for all instances.
+
+---
+
+## **10.4.3 LOG (NATURA)**
+
+Based on the definitions:
+
+* Atomic logs are created for attribute changes
+* Activity logs are created for workflow transitions
+* Process logs are created for start/end events
+* Trigger logs are generated for automation
+
+Every behavioral rule defined in the Process Manager becomes **traceable**.
+
+---
+
+## **10.4.4 Generated UI**
+
+The Bridge automatically creates:
+
+* Forms
+* Input components
+* Buttons and actions
+* State transitions
+* Auto-layout structures
+* Domain validation mappings
+* Trigger execution hooks
+
+This UI becomes what users see in the **Instance Manager**.
+
+---
+
+# **10.5 Example: Defining the “Phone Call Management (PHO)” Process**
+
+The example definition you provided is *exactly* what belongs inside the Process Manager:
+
+```json
+{
+  "process": {
+    "code": "PHO",
+    "name": "Phone Call Management",
+    "description": "Manages inbound and outbound customer phone calls",
+    "version": "1.0",
+    "family": "COMMUNICATION",
+    "standard_duration": 300,
+    "k_target": 1.5,
+    "business_value": "high",
+    "frequency": "50-100/day"
+  }
+}
 ```
-(1) Identify entity (CMP–ETY–LOG triad)
-(2) Validate operation against STRUCTURE_ID
-(3) Extract OPE definition (behavior codes)
-(4) Load current ETY state
-(5) Apply transformation rules
-(6) Produce new ETY state
-(7) Write LOG record (immutable)
-(8) Return updated entity to navigation layer
-```
 
-Each step is standardized and domain-independent.
+Once defined:
 
-### **Step 1: Identify Entity**
+* Panel 2 would define attributes like `caller_name`, `phone_number`, `outcome`
+* Panel 3 would define workflow states like `NEW → IN_PROGRESS → COMPLETED`
+* Triggers would define:
+  `"IF outcome = INTERESTED THEN create_offer"`
 
-The Process Manager locates the entity using:
+And once saved:
 
-* dna_id
-* structure_id
-* breadcrumb_id
-
-This ensures the correct manifestation is selected.
-
-### **Step 2: Validate Operation**
-
-The operation must be:
-
-* valid for this entity type
-* permitted by the MET/OPE mapping
-* compatible with the CMP structure
-
-If the operation is invalid, the process is rejected immediately.
-
-### **Step 3: Load OPE Behavior**
-
-Each OPE is defined by:
-
-* allowed attribute changes
-* default behavior patterns
-* sequence rules
-* structural requirements
-
-These inform the transformation logic.
-
-### **Step 4: Load Current ETY State**
-
-The Process Manager extracts:
-
-* universal attributes
-* specific attributes
-* current lifecycle_state
-* relationships
-* timestamps
-* custom fields stored in json_data
-
-### **Step 5: Apply Transformation**
-
-The Process Manager applies the OPE behavior:
-
-* assign new values
-* modify universal attributes
-* update specific attributes
-* propagate structure rules
-* maintain structural integrity
-* create child entities if required (through Z-axis logic)
-* link or unlink parent entities
-
-### **Step 6: Produce New State**
-
-The updated ETY state becomes the new manifestation of the entity.
-
-### **Step 7: Register LOG Entry**
-
-Every mutation produces a LOG record with:
-
-* dna_id
-* operation_id
-* before_state
-* after_state
-* timestamp
-* actor
-* breadcrumb information
-
-This ensures total accountability and reconstructability.
-
-### **Step 8: Return Updated Entity**
-
-The new ETY state is returned to the caller:
-
-* Navigate_X
-* Navigate_Y
-* Navigate_Z
-* Universal_Processor
-
-This enables subsequent steps in larger processes.
+* The template is created in CMP
+* The workflow scaffold is created in ETY
+* LOG behavior is configured
+* The UI is generated for users to create PHO instances
 
 ---
 
-## **10.5 Multi-Step Processes**
+# **10.6 Relationship with Instance Manager**
 
-Processes often involve multiple consecutive OPE executions.
+It is important to distinguish the two roles clearly:
 
-Example: handling a phone call
+### **Process Manager = Define ontology (Templates)**
 
-```
-SET_NAME
-SET_PHONE_NUMBER
-SET_DURATION
-UPDATE_LIFECYCLE_STATE
-ADD_NOTES
-ASSIGN_OPERATOR
-```
+### **Instance Manager = Execute ontology (Instances)**
 
-Each of these is
-**an operation**,
-**a state mutation**,
-**a LOG entry**,
-**a universal pattern**.
+The Process Manager is used **once per process type**.
+The Instance Manager is used **every day by operators**.
 
-The Process Manager chains these operations without requiring domain-specific scripts.
+This separation ensures:
+
+* Organizational stability
+* Template consistency
+* Low K coefficient
+* Predictable UI generation
+* Full traceability across CMP–ETY–LOG
 
 ---
 
-## **10.6 Hierarchical Processes (Depth Navigation)**
+# **10.7 Summary**
 
-Certain processes create child entities or extend a hierarchical chain.
+The Process Manager is:
 
-Examples:
+* The **ontology editor**
+* The **template engine**
+* The **structural designer**
+* The **workflow compiler**
+* The **trigger configurator**
+* The **domain governor**
+* The **origin point of CMP / ETY / LOG**
+* The **source of all user interfaces**
+* The **definer of business capability**
 
-* Adding a sub-task under a task
-* Creating a QC step under a production batch
-* Attaching a note entity to a parent record
-
-The Process Manager handles these through:
-
-* Breadcrumb generation
-* STRUCTURE_ID inheritance
-* CMP-driven structural rules
-* Navigate_Z orchestration
-
-Depth in the Entity Graph is preserved and becomes navigable through Z-axis traversal.
-
----
-
-## **10.7 Process Manager and the Universal Navigators**
-
-The Process Manager is invoked by the three navigators:
-
-### **Navigate_X**
-
-Changes attribute values (horizontal movement).
-
-### **Navigate_Y**
-
-Creates or filters entities (vertical creation movement).
-
-### **Navigate_Z**
-
-Creates or navigates child entities (depth movement).
-
-The Process Manager executes the actual mutation each time.
-
----
-
-## **10.8 Determinism and Predictability**
-
-Because all processes are:
-
-* OPE-driven
-* structure-aligned
-* matrix-defined
-* triad-synchronized
-
-they behave **predictably**, regardless of domain or complexity.
-
-The same operation:
-
-* behaves the same in PHO, CLI, ORD, EXT…
-* works for templates and instances
-* applies across bootstrap and user-created entities
-* preserves universal rules
-* generates fully structured LOG entries
-
-Determinism is a core property of THE BRIDGE.
-
----
-
-## **10.9 Error Handling in Processes**
-
-The Process Manager enforces strict constraints:
-
-1. Invalid OPE for current STRUCTURE_ID → reject
-2. Missing required MET or ATR → reject
-3. Violations of CMP validation rules → reject
-4. Incompatible attribute state transitions → reject
-5. Unauthorized mutation attempts → reject
-
-Rejected processes are never written to LOG, ensuring the entity’s NATURA record remains clean and reliable.
-
----
-
-## **10.10 Summary**
-
-The Process Manager provides:
-
-* universal mutation logic
-* domain-free process execution
-* deterministic application of operations
-* hierarchical entity creation
-* attribute-level consistency
-* complete history generation
-* total alignment with the triadic ontology
-
-It transforms entity state using the same principles, regardless of the domain, ensuring all business processes behave uniformly, predictably, and transparently.
+Nothing in the operational system exists unless it is **first defined here**.
