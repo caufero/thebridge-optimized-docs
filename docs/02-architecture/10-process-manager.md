@@ -1,4 +1,4 @@
-# **CHAPTER 10 — PROCESS MANAGER**
+# **CHAPTER 10 — PROCESS (TEMPLATE) MANAGER**
 
 ### *The Ontology & Template Engine of The Bridge*
 
@@ -34,18 +34,16 @@ In simple terms:
 
 ---
 
-# **10.3 Three-Panel Architecture**
+# **10.3 Multiple-Panel Architecture**
 
-*(From the official interface specification)*
-
-The Process Manager UI has three coordinated panels.
-These panels together construct the ontological structure of a process.
+The Process Manager UI is among a number of coordinated panels.
+Bootstrap, Attributes, **Templates (Process Manager)**, Instances (Instance Manager), SuperTable, Tests
 
 ---
 
-## **10.3.1 Panel 1 — Process Hierarchy (TreeView)**
+## **10.3.1 Process Hierarchy (TreeView)**
 
-This left panel governs **ontology depth**.
+This panel governs the **hierarchical** view of templates.
 
 * Displays all processes in a parent–child tree
 * Defines hierarchical and ontological relationships
@@ -63,11 +61,11 @@ This is the **ASPETTO vertical axis**.
 
 ---
 
-## **10.3.2 Panel 2 — Attributes & Meta-Properties**
+## **10.3.2 Attributes & Meta-Properties**
 
-The second panel defines the **internal structure** of a process template.
+The details section defines the **internal structure** of a process template.
 
-Here, the manager configures:
+Here, the following are displayed:
 
 * Attributes (ATR)
 * Meta-attributes (MET references)
@@ -90,11 +88,11 @@ The template itself **is** the form definition.
 
 ---
 
-## **10.3.3 Panel 3 — Composition (Workflow, Relationships & Triggers)**
+## **10.3.3 Composition (Workflow, Relationships & Triggers)**
 
-The third panel defines how the process *behaves*.
+The third sections defines how the process *behaves*.
 
-Here, the manager configures:
+Here, the following are displayed:
 
 * **Workflow states**
 * **Transitions**
