@@ -215,15 +215,15 @@ Everything has NATURA.
 
 ### **CLI — Customer**
 
-CMP describes “what a customer is.”
-ETY holds each customer’s current data.
-LOG holds every change (creation, status update, assigned operator, etc.)
+* CMP describes “what a customer is.”
+* ETY holds each customer’s current data.
+* LOG holds every change (creation, status update, assigned operator, etc.)
 
 ### **MET — Universal Attributes**
 
-CMP describes MET006 (created_at) structurally.
-ETY describes its current system-level role.
-LOG logs bootstrap creation and later modifications.
+* CMP describes MET006 (created_at) structurally.
+* ETY describes its current system-level role.
+* LOG logs bootstrap creation and later modifications.
 
 ### **OPE — Universal Operations**
 
