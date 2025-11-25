@@ -64,7 +64,7 @@ CMP is the ASPETTO manifestation and must never store dynamic or instance-specif
 | **json_ui**         | UI configuration descriptors                       |
 | **metadata**        | Optional structural metadata                       |
 
-Only structural information is stored in CMP.
+Only structural information and business instances are stored in CMP.
 
 ---
 
