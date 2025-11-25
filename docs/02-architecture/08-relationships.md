@@ -169,7 +169,7 @@ CMP, ETY, and LOG merely provide different perspectives of the entity.
 
 Instance relationships must always reflect structural definitions bound in CMP.
 
-### **Rule 3: Process Relationships Are Immutable**
+### **Rule 3: Action Relationships Are Immutable**
 
 All LOG relationships remain permanently preserved and must never be modified.
 
