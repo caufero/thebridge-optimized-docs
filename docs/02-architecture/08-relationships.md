@@ -20,7 +20,7 @@ The Entity Graph is a multi-level network in which:
 
 * **CMP nodes** represent structural relationships
 * **ETY nodes** represent real-world connections
-* **LOG nodes** represent process-driven links
+* **LOG nodes** represent action-driven links
 
 These three layers together form the complete ontology of connectivity.
 
