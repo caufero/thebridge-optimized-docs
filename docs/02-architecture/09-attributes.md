@@ -1,7 +1,3 @@
-Here you go — same content, headings renumbered, emojis removed from **headings only**.
-
----
-
 # **Chapter 9 - THE COMPLETE ATTRIBUTE ONTOLOGY**
 
 ## **9.1 Physical Columns, MET, OPE, ATR - The 504 Bootstrap Records and the Three-Dimensional SuperTable**
