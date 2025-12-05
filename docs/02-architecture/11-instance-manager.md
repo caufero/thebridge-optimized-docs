@@ -1,6 +1,6 @@
-# **Chapter 9 — Instance Manager**
+# **Chapter 11 — Instance Manager**
 
-## **9.1 Purpose of the Instance Manager**
+## **11.1 Purpose of the Instance Manager**
 
 The **Instance Manager** is the engine responsible for the creation, initialization, structural alignment, and state coherence of all entity instances in THE BRIDGE.
 
@@ -17,7 +17,7 @@ All entity births follow the same process, making instance creation universal, d
 
 ---
 
-## **9.2 The Lifecyle of Entity Creation**
+## **11.2 The Lifecyle of Entity Creation**
 
 Every entity undergoes a standardized creation sequence:
 
@@ -36,7 +36,7 @@ This lifecycle applies to:
 
 * Business entities (PHO, ORD, CLI, EXT…)
 * Template entities (TPL_PHO_001, TPL_ORD_001…)
-* Meta-entities (MET006, OPE009.)
+* Meta-entities (MET006, OPE0011.)
 * Hierarchical entities created through Navigate_Z
 * Any new entity type introduced in the future
 
@@ -44,7 +44,7 @@ The Instance Manager is domain-agnostic.
 
 ---
 
-## **9.3 Template Selection (CMP → ETY)**
+## **11.3 Template Selection (CMP → ETY)**
 
 The first step is identifying which CMP definition will produce the new entity.
 
@@ -69,9 +69,9 @@ The template is optional only for bootstrap entities (MET and OPE), as they orig
 
 ---
 
-## **9.4 Assigning the Sacred Codes**
+## **11.4 Assigning the Sacred Codes**
 
-### **9.4.1 DNA_ID — The Ontological Identity**
+### **11.4.1 DNA_ID — The Ontological Identity**
 
 The Instance Manager generates or receives a unique DNA_ID that identifies the new entity across:
 
@@ -91,7 +91,7 @@ DNA_ID ensures the triad is unified.
 
 ---
 
-### **9.4.2 STRUCTURE_ID — Coordinate of Existence**
+### **11.4.2 STRUCTURE_ID — Coordinate of Existence**
 
 The STRUCTURE_ID is copied directly from the template:
 
@@ -111,7 +111,7 @@ The STRUCTURE_ID never changes during entity lifespan.
 
 ---
 
-### **9.4.3 BREADCRUMB_ID — Depth and Trajectory**
+### **11.4.3 BREADCRUMB_ID — Depth and Trajectory**
 
 If the entity is created as part of a hierarchical process (e.g., via Navigate_Z), the Instance Manager assigns a breadcrumb:
 
@@ -131,11 +131,11 @@ Breadcrumbs enable hierarchical views, depth navigation, and inherited filtering
 
 ---
 
-## **9.5 Initializing the ETY Record**
+## **11.5 Initializing the ETY Record**
 
 Once the sacred codes are in place, the Instance Manager constructs the ETY record.
 
-### **9.5.1 Load Universal Attributes (MET)**
+### **11.5.1 Load Universal Attributes (MET)**
 
 MET universal attributes are always applied:
 
@@ -149,7 +149,7 @@ MET universal attributes are always applied:
 
 Defaults may be provided through template definitions.
 
-### **9.5.2 Load Specific Attributes (ATR)**
+### **11.5.2 Load Specific Attributes (ATR)**
 
 The template's JSON schema defines which ATR values apply.
 The Instance Manager loads these attributes and sets:
@@ -162,7 +162,7 @@ All attributes are stored in ETY.json_data.
 
 ---
 
-## **9.6 Logging the Creation (LOG Entry)**
+## **11.6 Logging the Creation (LOG Entry)**
 
 Every entity creation must be registered in LOG:
 
@@ -185,7 +185,7 @@ Entity creation is not complete until the LOG record exists.
 
 ---
 
-## **9.7 Instance Manager and the Entity Graph**
+## **11.7 Instance Manager and the Entity Graph**
 
 The Instance Manager inserts the new entity into the Entity Graph by:
 
@@ -209,7 +209,7 @@ This makes the entity fully alive within the ontology.
 
 ---
 
-## **9.8 Special Case: Bootstrap Entities**
+## **11.8 Special Case: Bootstrap Entities**
 
 MET and OPE are produced through a dedicated bootstrap process, but they still pass through the Instance Manager logic in principle:
 
@@ -221,7 +221,7 @@ Bootstrap is simply a batch instance creation with fixed structural inputs.
 
 ---
 
-## **9.9 Guarantees of the Instance Manager**
+## **11.9 Guarantees of the Instance Manager**
 
 The Instance Manager ensures that every new entity:
 
