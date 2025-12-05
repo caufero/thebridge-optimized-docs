@@ -1,6 +1,6 @@
-# **Chapter 15 — UI & WebViewer Architecture**
+# **Chapter 17 — UI & WebViewer Architecture**
 
-## **15.1 Role of the UI Layer**
+## **17.1 Role of the UI Layer**
 
 The UI is the ENTITÀ perspective made visible.
 
@@ -19,7 +19,7 @@ Everything else is handled by the Instance Manager, Process Manager, and the Uni
 
 ---
 
-## **15.2 High-Level Data Flow**
+## **17.2 High-Level Data Flow**
 
 The UI/WebViewer cycle follows this pattern:
 
@@ -35,7 +35,7 @@ This loop is universal for all screens.
 
 ---
 
-## **15.3 The VIEW_MODEL JSON Contract**
+## **17.3 The VIEW_MODEL JSON Contract**
 
 The VIEW_MODEL is the single object that the UI reads.
 
@@ -94,11 +94,11 @@ It only knows how to render it.
 
 ---
 
-## **15.4 FileMaker Side: Building VIEW_MODEL**
+## **17.4 FileMaker Side: Building VIEW_MODEL**
 
 A dedicated script prepares the JSON for the WebViewer.
 
-### **15.4.1 Script: `UI_Build_SuperTable_View`**
+### **17.4.1 Script: `UI_Build_SuperTable_View`**
 
 **Purpose:**
 Build VIEW_MODEL based on current filters and selected entity_type.
@@ -166,11 +166,11 @@ Refresh Window [ Flush cached join results ; Flush cached external data ]
 
 ---
 
-## **15.5 WebViewer HTML/JS Shell**
+## **17.5 WebViewer HTML/JS Shell**
 
 The WebViewer uses an HTML shell that reads `UI::g_ViewModel_JSON` via the `GetLayoutObjectAttribute` technique or via `data:` URL injection.
 
-### **15.5.1 WebViewer HTML Template**
+### **17.5.1 WebViewer HTML Template**
 
 ```html
 <!DOCTYPE html>
@@ -423,14 +423,14 @@ The WebViewer uses an HTML shell that reads `UI::g_ViewModel_JSON` via the `GetL
 
 ---
 
-## **15.6 Injecting VIEW_MODEL into the WebViewer**
+## **17.6 Injecting VIEW_MODEL into the WebViewer**
 
 FileMaker can pass the VIEW_MODEL into the HTML in two main ways:
 
 1. Using a `data:` URL calculation.
 2. Using `GetLayoutObjectAttribute` with a global field.
 
-### **15.6.1 WebViewer Calculation (data: URL)**
+### **17.6.1 WebViewer Calculation (data: URL)**
 
 ```
 // WebViewer object calculation
@@ -458,7 +458,7 @@ This approach keeps the WebViewer stateless and purely driven by the global JSON
 
 ---
 
-## **15.7 Handling UI Commands in FileMaker**
+## **17.7 Handling UI Commands in FileMaker**
 
 Whenever the user clicks a row or performs an action, the JS calls:
 
@@ -472,7 +472,7 @@ sendCommandToFileMaker({
 
 FileMaker must handle this in a single script.
 
-### **15.7.1 Script: `UI_Handle_Web_Command`**
+### **17.7.1 Script: `UI_Handle_Web_Command`**
 
 ```
 // Script: UI_Handle_Web_Command
@@ -505,11 +505,11 @@ End If
 
 ---
 
-## **15.8 Example: Inline Attribute Edit**
+## **17.8 Example: Inline Attribute Edit**
 
 To edit an attribute from the WebViewer, JS sends a mutation command.
 
-### **15.8.1 JS side**
+### **17.8.1 JS side**
 
 ```js
 function editName(row, newName) {
@@ -523,7 +523,7 @@ function editName(row, newName) {
 }
 ```
 
-### **15.8.2 FileMaker side**
+### **17.8.2 FileMaker side**
 
 ```
 // Script: UI_Handle_Web_Command (continuation)
@@ -565,7 +565,7 @@ This closes the loop between UI and ontology:
 
 ---
 
-## **15.9 Summary**
+## **17.9 Summary**
 
 The UI & WebViewer layer:
 
