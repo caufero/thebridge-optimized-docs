@@ -1,4 +1,4 @@
-# **Chapter 14 — Script Configuration**
+# **Chapter 16 — Script Configuration**
 
 ## **14.1 Overview**
 
