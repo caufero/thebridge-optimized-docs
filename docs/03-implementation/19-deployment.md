@@ -1,6 +1,6 @@
-# **Chapter 17 — Deployment**
+# **Chapter 19 — Deployment**
 
-## **17.1 Overview**
+## **19.1 Overview**
 
 Deployment in THE BRIDGE is the process of taking the triadic CMP–ETY–LOG architecture, the navigators, and the UI/WebViewer framework, and placing them into a **stable, secure, and high-performance FileMaker Server environment**.
 
@@ -19,7 +19,7 @@ This chapter describes the recommended deployment pipeline, server configuration
 
 ---
 
-# **17.2 Deployment Pipeline**
+# **19.2 Deployment Pipeline**
 
 Deployment occurs in five stages:
 
@@ -29,7 +29,7 @@ Deployment occurs in five stages:
 4. **Publish domain templates (CMP)**
 5. **Enable live operations (PTY, OPE, UI)**
 
-### **17.2.1 Step 1 — Environment Preparation**
+### **19.2.1 Step 1 — Environment Preparation**
 
 Ensure the server meets required conditions:
 
@@ -44,7 +44,7 @@ If using cloud hosting (e.g., FM Cloud, AWS, macOS server), match specs describe
 
 ---
 
-## **17.3 Uploading the Core Files**
+## **19.3 Uploading the Core Files**
 
 THE BRIDGE normally deploys as:
 
@@ -52,13 +52,13 @@ THE BRIDGE normally deploys as:
 * optional secondary UI files (if any)
 * optional domain-specific modular extensions (templates only, not tables)
 
-### **17.3.1 Recommended Deployment Structure**
+### **19.3.1 Recommended Deployment Structure**
 
 ```
 TheBridge.fmp12 (File Name)
 ```
 
-### **17.3.2 Upload Procedure**
+### **19.3.2 Upload Procedure**
 
 1. Open FileMaker Server Admin Console
 2. Go to **Databases > Upload Database**
@@ -67,7 +67,7 @@ TheBridge.fmp12 (File Name)
 5. Activate Web Direct so it can also be accessed through the browser
 6. Set **Auto-Open** ON
 
-### **17.3.3 Validate Database Encryption (If Applied)**
+### **19.3.3 Validate Database Encryption (If Applied)**
 
 If the file is encrypted:
 
@@ -77,11 +77,11 @@ If the file is encrypted:
 
 ---
 
-# **17.4 Initial Server Script Configuration**
+# **19.4 Initial Server Script Configuration**
 
 THE BRIDGE requires several server-side configurations to run efficiently.
 
-### **17.4.1 Required Server Scripts**
+### **19.4.1 Required Server Scripts**
 
 1. **LOG Backup Consolidation**
 2. **CMP / ETY Consistency Scan**
@@ -100,9 +100,9 @@ Create schedules in FileMaker Server Admin Console:
 
 ---
 
-# **17.5 WebViewer Deployment Considerations**
+# **19.5 WebViewer Deployment Considerations**
 
-### **17.5.1 CDN Asset Loading**
+### **19.5.1 CDN Asset Loading**
 
 If your UI loads external JS/CSS (like React, Tailwind, Chart.js), you must ensure:
 
@@ -110,7 +110,7 @@ If your UI loads external JS/CSS (like React, Tailwind, Chart.js), you must ensu
 * HTTPS is enforced
 * Fallback local versions exist if needed
 
-### **17.5.2 Data URLs vs Embedded HTML**
+### **19.5.2 Data URLs vs Embedded HTML**
 
 For reliability, the recommended strategy is:
 
@@ -121,17 +121,17 @@ This keeps deployments self-contained.
 
 ---
 
-# **17.6 JSON Performance Tuning**
+# **19.6 JSON Performance Tuning**
 
 Large deployments of THE BRIDGE use heavy JSON manipulation.
 Recommendations:
 
-### **17.6.1 Enable “WiredTiger” (macOS/Linux)**
+### **19.6.1 Enable “WiredTiger” (macOS/Linux)**
 
 If using FM Server on Linux/macOS with Mongo microservice extensions:
 (not standard FM feature, optional)
 
-### **17.6.2 Limit Deep ETY Queries**
+### **19.6.2 Limit Deep ETY Queries**
 
 Use indexes:
 
@@ -139,17 +139,17 @@ Use indexes:
 * structure_id
 * breadcrumb_id
 
-### **17.6.3 Precompute Partial JSON (Optional)**
+### **19.6.3 Precompute Partial JSON (Optional)**
 
 Sometimes a “VIEW_CACHED” JSON field can store UI-specific precomputations to avoid repetitive deep parsing.
 
 ---
 
-# **17.7 PSOS Optimization**
+# **19.7 PSOS Optimization**
 
 PSOS (Perform Script on Server) is central to how THE BRIDGE executes complex OPE chains.
 
-### **17.7.1 Recommendations**
+### **19.7.1 Recommendations**
 
 1. Keep PSOS scripts **stateless**
 2. Avoid opening many related records
@@ -159,7 +159,7 @@ PSOS (Perform Script on Server) is central to how THE BRIDGE executes complex OP
 6. Remove unnecessary window operations
 7. Never store PSOS results in global fields
 
-### **17.7.2 Example PSOS Execution Snippet**
+### **19.7.2 Example PSOS Execution Snippet**
 
 ```
 // Client-side script
@@ -176,11 +176,11 @@ End If
 
 ---
 
-# **17.8 Security Configuration**
+# **19.8 Security Configuration**
 
 Security is critical because CMP, ETY, and LOG contain the ontology and entire system history.
 
-### **17.8.1 Required Security Controls**
+### **19.8.1 Required Security Controls**
 
 * Require **Admin Console** password
 * Use **external authentication** for users
@@ -193,7 +193,7 @@ Security is critical because CMP, ETY, and LOG contain the ontology and entire s
 * Enforce SSL
 * Use encryption-at-rest for the database file
 
-### **17.8.2 Recommended Privilege Sets**
+### **19.8.2 Recommended Privilege Sets**
 
 | Role       | Access                                    |
 | ---------- | ----------------------------------------- |
@@ -205,7 +205,7 @@ Security is critical because CMP, ETY, and LOG contain the ontology and entire s
 
 ---
 
-# **17.9 Backup Strategy**
+# **19.9 Backup Strategy**
 
 The triad must be preserved:
 
@@ -213,19 +213,19 @@ The triad must be preserved:
 * ETY Table
 * LOG Table
 
-### **17.9.1 Backup Intervals**
+### **19.9.1 Backup Intervals**
 
 * **Daily full backup**
 * **Weekly offsite backup**
 
-### **17.9.2 Example Backup Folder Structure**
+### **19.9.2 Example Backup Folder Structure**
 
 ```
 /backups/daily/TheBridge_2025-11-23.fmp12
 /backups/offsite/weekly/TheBridge_2025-W47.fmp12
 ```
 
-### **17.9.3 Post-Backup Validation Script**
+### **19.9.3 Post-Backup Validation Script**
 
 After backup completes:
 
@@ -240,7 +240,7 @@ End If
 
 ---
 
-# **17.10 Deployment Checklist**
+# **19.10 Deployment Checklist**
 
 ### **Server**
 
@@ -271,7 +271,7 @@ End If
 
 ---
 
-# **17.11 Summary**
+# **19.11 Summary**
 
 Deployment of THE BRIDGE requires:
 
