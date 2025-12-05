@@ -1,6 +1,6 @@
-# **Chapter 13 — Building the Schema**
+# **Chapter 15 — Building the Schema**
 
-## **13.1 Overview**
+## **15.1 Overview**
 
 The schema of THE BRIDGE is minimal, strict, and ontologically grounded.
 It is not a domain-driven schema, nor does it resemble traditional software database design.
@@ -17,7 +17,7 @@ The goal when building the schema is to create the *least amount of physical str
 
 ---
 
-## **13.2 Principles for Schema Construction**
+## **15.2 Principles for Schema Construction**
 
 1. **Every entity is represented in three manifestations (CMP–ETY–LOG).**
 2. **No domain-specific tables are allowed.**
@@ -32,9 +32,9 @@ This creates a universal, domain-free architecture.
 
 ---
 
-# **13.3 CMP Table (Structural Manifestation)**
+# **15.3 CMP Table (Structural Manifestation)**
 
-### **13.3.1 Purpose**
+### **15.3.1 Purpose**
 
 CMP Table defines the structural identity of every entity:
 
@@ -49,7 +49,7 @@ CMP is the ASPETTO manifestation and must never store dynamic or instance-specif
 
 ---
 
-### **13.3.2 Recommended Fields**
+### **15.3.2 Recommended Fields**
 
 | Field               | Purpose                                            |
 | ------------------- | -------------------------------------------------- |
@@ -68,9 +68,9 @@ Only structural information and business instances are stored in CMP.
 
 ---
 
-# **13.4 ETY Table (Current State Manifestation)**
+# **15.4 ETY Table (Current State Manifestation)**
 
-### **13.4.1 Purpose**
+### **15.4.1 Purpose**
 
 ETY Table stores the live state of every entity in the system.
 
@@ -90,7 +90,7 @@ ETY is the ENTITÀ manifestation.
 
 ---
 
-### **13.4.2 Recommended Fields**
+### **15.4.2 Recommended Fields**
 
 | Field             | Purpose                                          |
 | ----------------- | ------------------------------------------------ |
@@ -110,9 +110,9 @@ No additional domain fields may be added.
 
 ---
 
-# **13.5 LOG Table (Historical Manifestation)**
+# **15.5 LOG Table (Historical Manifestation)**
 
-### **13.5.1 Purpose**
+### **15.5.1 Purpose**
 
 LOG Table stores the immutable history of every change made to any entity via the Process Manager.
 
@@ -128,7 +128,7 @@ LOG is the NATURA manifestation.
 
 ---
 
-### **13.5.2 Recommended Fields**
+### **15.5.2 Recommended Fields**
 
 | Field             | Purpose                                |
 | ----------------- | -------------------------------------- |
@@ -147,7 +147,7 @@ LOG must remain immutable.
 
 ---
 
-## **13.6 Index Requirements**
+## **15.6 Index Requirements**
 
 To maintain performance and deterministic queries, the following fields require indexes:
 
@@ -173,7 +173,7 @@ JSON fields should remain unindexed to avoid overhead.
 
 ---
 
-## **13.7 JSON Schema Structure**
+## **15.7 JSON Schema Structure**
 
 Each CMP entry contains a `json_schema` describing:
 
@@ -196,7 +196,7 @@ This schema determines:
 
 ---
 
-## **13.8 Domain Extensions (Templates)**
+## **15.8 Domain Extensions (Templates)**
 
 Domain-level structures—PHO, CLI, ORD, EXT—are added by creating **new template entries** in CMP:
 
@@ -218,7 +218,7 @@ Through templates, entire business domains are added without altering the schema
 
 ---
 
-## **13.9 Schema Immutability**
+## **15.9 Schema Immutability**
 
 The schema is designed to remain unchanged forever.
 All evolution occurs through template and attribute definitions stored inside CMP and ETY.
@@ -235,7 +235,7 @@ This immutability is what gives THE BRIDGE its universality.
 
 ---
 
-## **13.10 Summary**
+## **15.10 Summary**
 
 Building the schema for THE BRIDGE involves:
 
