@@ -63,22 +63,24 @@ nav:
   - 6. Overview: 02-architecture/06-overview.md
   - 7. Core Tables: 02-architecture/07-core-tables.md
   - 8. Relationships: 02-architecture/08-relationships.md
-  - 9. Instance Manager: 02-architecture/09-instance-manager.md
-  - 10. Process Manager: 02-architecture/10-process-manager.md
-  - 11. Bootstrap: 02-architecture/11-bootstrap.md 
-  - 12. Setup Environment: 03-implementation/12-setup-environment.md
-  - 13. Build Schema: 03-implementation/13-build-schema.md
-  - 14. Configure Scripts: 03-implementation/14-configure-scripts.md
-  - 15. User Interface: 03-implementation/15-user-interface.md
-  - 16. Testing and Debugging: 03-implementation/16-testing-and-debugging.md
-  - 17. Deployment: 03-implementation/17-deployment.md
-  - 18. Glossary: 04-appendices/18-glossary.md
-  - 19. Matrix Extract: 04-appendices/19-matrix-extract.md
-  - 20. React Reference: 04-appendices/20-react-reference.md
-  - 21. Contact and Support: 04-appendices/21-contact-and-support.md
-  - 22. Change Log: 05-meta/22-changelog.md
-  - 23. Roadmap: 05-meta/23-roadmap.md
-  - 24. Summary: 05-meta/24-summary.md
+  - 9. Attributes: 02-architecture/09-attributes.md
+  - 10. Physical-Virtual Isomorphism: 02-architecture/10-physical-virtual-isomorphism.md
+  - 11. Instance Manager: 02-architecture/11-instance-manager.md
+  - 12. Process Manager: 02-architecture/12-process-manager.md
+  - 13. Bootstrap: 02-architecture/13-bootstrap.md
+  - 14. Setup Environment: 03-implementation/14-setup-environment.md
+  - 15. Build Schema: 03-implementation/15-build-schema.md
+  - 16. Configure Scripts: 03-implementation/16-configure-scripts.md
+  - 17. User Interface: 03-implementation/17-user-interface.md
+  - 18. Testing and Debugging: 03-implementation/18-testing-and-debugging.md
+  - 19. Deployment: 03-implementation/19-deployment.md
+  - 20. Glossary: 04-appendices/20-glossary.md
+  - 21. Matrix Extract: 04-appendices/21-matrix-extract.md
+  - 22. React Reference: 04-appendices/22-react-reference.md
+  - 23. Contact and Support: 04-appendices/23-contact-and-support.md
+  - 24. Change Log: 05-meta/24-changelog.md
+  - 25. Roadmap: 05-meta/25-roadmap.md
+  - 26. Summary: 05-meta/26-summary.md
 
 markdown_extensions:
   - admonition
