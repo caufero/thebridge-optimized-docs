@@ -1,6 +1,6 @@
-# **Chapter 16 — Testing & Debugging**
+# **Chapter 18 — Testing & Debugging**
 
-## **16.1 Overview**
+## **18.1 Overview**
 
 Testing and debugging in THE BRIDGE require a completely different mindset from traditional application QA.
 
@@ -17,7 +17,7 @@ Testing focuses on **mechanics**, not business rules — the ontology defines al
 
 ---
 
-# **16.2 Categories of Tests**
+# **18.2 Categories of Tests**
 
 Every deployment of THE BRIDGE requires tests across these six layers:
 
@@ -32,12 +32,12 @@ Each layer has formal procedures and code tools.
 
 ---
 
-# **16.3 CMP Structural Tests**
+# **18.3 CMP Structural Tests**
 
 CMP_TABLE is the foundation of the ontology.
 Structural defects must be detected early.
 
-### **16.3.1 Test: CMP Schema Completeness**
+### **18.3.1 Test: CMP Schema Completeness**
 
 This test ensures every CMP template contains:
 
@@ -86,12 +86,12 @@ End If
 
 ---
 
-# **16.4 ETY Integrity Tests**
+# **18.4 ETY Integrity Tests**
 
 ETY_TABLE is the live state of the system.
 Testing must ensure ETY entries match their template definitions.
 
-### **16.4.1 Test: ETY Attribute Validity**
+### **18.4.1 Test: ETY Attribute Validity**
 
 ```
 // ETY_Check
@@ -141,11 +141,11 @@ End Loop
 
 ---
 
-# **16.5 LOG Integrity Tests**
+# **18.5 LOG Integrity Tests**
 
 LOG_TABLE ensures the NATURA history is intact.
 
-### **16.5.1 Test: Log Continuity**
+### **18.5.1 Test: Log Continuity**
 
 Verify every ETY mutation has a corresponding log entry.
 
@@ -178,12 +178,12 @@ End Loop
 
 ---
 
-# **16.6 Operation Tests (OPE Execution)**
+# **18.6 Operation Tests (OPE Execution)**
 
 Operations (OPE) define all behaviors.
 Testing OPE correctness ensures mutations are consistent and deterministic.
 
-### **16.6.1 Test: Apply OPE in Controlled Environment**
+### **18.6.1 Test: Apply OPE in Controlled Environment**
 
 ```
 // Test_Operation
@@ -209,9 +209,9 @@ Expected:
 
 ---
 
-# **16.7 Navigation Tests (X, Y, Z)**
+# **18.7 Navigation Tests (X, Y, Z)**
 
-### **16.7.1 Navigation_X (Attribute Mutation)**
+### **18.7.1 Navigation_X (Attribute Mutation)**
 
 ```
 // Test_Navigate_X
@@ -230,7 +230,7 @@ Perform Script [ “Navigate_X” ; Parameter: $test ]
 Show Custom Dialog [ "Navigate_X Output" ; Get ( ScriptResult ) ]
 ```
 
-### **16.7.2 Navigation_Y (Creation + Filtering)**
+### **18.7.2 Navigation_Y (Creation + Filtering)**
 
 ```
 // Test_Navigate_Y_Create
@@ -245,7 +245,7 @@ Set Variable [ $test ;
 Perform Script [ “Navigate_Y” ; Parameter: $test ]
 ```
 
-### **16.7.3 Navigation_Z (Depth Navigation)**
+### **18.7.3 Navigation_Z (Depth Navigation)**
 
 ```
 // Test_Navigate_Z_Children
@@ -262,7 +262,7 @@ Perform Script [ “Navigate_Z” ; Parameter: $test ]
 
 ---
 
-# **16.8 UI / WebViewer Tests**
+# **18.8 UI / WebViewer Tests**
 
 UI test strategy focuses on:
 
@@ -270,7 +270,7 @@ UI test strategy focuses on:
 * validating rendering
 * ensuring command round-trips work
 
-### **16.8.1 Test: VIEW_MODEL Injection**
+### **18.8.1 Test: VIEW_MODEL Injection**
 
 ```
 // Script to test JSON injection
@@ -298,9 +298,9 @@ Should render immediately.
 
 ---
 
-# **16.9 Debugging Tools**
+# **18.9 Debugging Tools**
 
-### **16.9.1 JSON Inspector (Recommended)**
+### **18.9.1 JSON Inspector (Recommended)**
 
 A dedicated layout with:
 
@@ -309,7 +309,7 @@ A dedicated layout with:
 * a list of keys
 * a recursive inspector routine
 
-### **16.9.2 LOG Timeline Viewer**
+### **18.9.2 LOG Timeline Viewer**
 
 Shows chronological NATURA history for a selected entity:
 
@@ -320,7 +320,7 @@ WHERE dna_id = ?
 ORDER BY timestamp ASC
 ```
 
-### **16.9.3 ETY Snapshot Comparison**
+### **18.9.3 ETY Snapshot Comparison**
 
 ```
 // Compare two ETY snapshots
@@ -334,7 +334,7 @@ Let ([
 
 ---
 
-# **16.10 Debugging Common Issues**
+# **18.10 Debugging Common Issues**
 
 ### **Issue 1 — VIEW_MODEL not rendering**
 
@@ -372,7 +372,7 @@ Check:
 
 ---
 
-# **16.11 Summary**
+# **18.11 Summary**
 
 Testing THE BRIDGE involves:
 
