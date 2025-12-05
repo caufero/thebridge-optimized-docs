@@ -1,6 +1,6 @@
-# **Chapter 12 — Setup & Environment Requirements**
+# **Chapter 14 — Setup & Environment Requirements**
 
-## **12.1 Overview**
+## **14.1 Overview**
 
 This chapter describes the technical requirements and environment configuration necessary to run THE BRIDGE.
 Because the system is built on a universal, ontology-driven architecture with CMP–ETY–LOG as its core, the environment must guarantee:
@@ -15,9 +15,9 @@ The environment is not domain-specific; it must support the ontology without alt
 
 ---
 
-## **12.2 Software Requirements**
+## **14.2 Software Requirements**
 
-### **12.2.1 FileMaker Platform**
+### **14.2.1 FileMaker Platform**
 
 THE BRIDGE requires a modern FileMaker platform with:
 
@@ -41,7 +41,7 @@ Any environment must support these features.
 
 ---
 
-### **12.2.2 JavaScript Runtime (for WebViewer Components)**
+### **14.2.2 JavaScript Runtime (for WebViewer Components)**
 
 THE BRIDGE uses JavaScript inside WebViewers to:
 
@@ -63,7 +63,7 @@ React components (from the appendices) can be embedded if desired, but are optio
 
 ---
 
-### **12.2.3 Server Hardware**
+### **14.2.3 Server Hardware**
 
 Recommended specifications for FileMaker Server:
 
@@ -81,7 +81,7 @@ For large deployments, 32–64 GB RAM is preferable.
 
 ---
 
-## **12.3 File Structure Requirements**
+## **14.3 File Structure Requirements**
 
 Three core tables must exist and remain immutable in name and structure:
 
@@ -93,7 +93,7 @@ All structures must follow the definitions established during bootstrap.
 
 ---
 
-## **12.4 JSON Infrastructure**
+## **14.4 JSON Infrastructure**
 
 THE BRIDGE relies heavily on JSON for:
 
@@ -119,9 +119,9 @@ JSON structures must not be altered outside the navigation and process engines.
 
 ---
 
-## **12.5 Server Configuration**
+## **14.5 Server Configuration**
 
-### **12.5.1 PSOS (Perform Script on Server)**
+### **14.5.1 PSOS (Perform Script on Server)**
 
 Many key operations—especially Process Manager executions—should be run using PSOS for:
 
@@ -136,7 +136,7 @@ The server must allow:
 * script parameter passing
 * JSON results
 
-### **12.5.2 Scheduled Scripts**
+### **14.5.2 Scheduled Scripts**
 
 Required for:
 
@@ -150,7 +150,7 @@ Schedules must avoid modifying core tables directly.
 
 ---
 
-## **12.6 Optional External Integrations**
+## **14.6 Optional External Integrations**
 
 External integrations are not required for THE BRIDGE to function, but common optional enhancements include:
 
@@ -163,7 +163,7 @@ All external systems should communicate via JSON where possible.
 
 ---
 
-## **12.7 Environment Safety Rules**
+## **14.7 Environment Safety Rules**
 
 To maintain ontological integrity:
 
@@ -178,15 +178,15 @@ To maintain ontological integrity:
 9. **Do not alter the structure_id of any record.**
 10. **Do not create domain-specific tables.**
 11. **Do not implement custom workflows outside OPE logic.**
-12. **Do not run scripts that mutate entities without generating LOG entries.**
+14. **Do not run scripts that mutate entities without generating LOG entries.**
 
 Violating these rules breaks the ontology.
 
 ---
 
-## **12.8 Deployment-Level Requirements**
+## **14.8 Deployment-Level Requirements**
 
-### **12.8.1 File Hosting**
+### **14.8.1 File Hosting**
 
 The system must be hosted in an environment that guarantees:
 
@@ -196,7 +196,7 @@ The system must be hosted in an environment that guarantees:
 * secure transmission (SSL)
 * authenticated access
 
-### **12.8.2 Backup Strategy**
+### **14.8.2 Backup Strategy**
 
 Backups must include:
 
@@ -210,7 +210,7 @@ Recommended retention: 7–30 days depending on deployment scale.
 
 ---
 
-## **12.9 Summary**
+## **14.9 Summary**
 
 THE BRIDGE requires:
 
