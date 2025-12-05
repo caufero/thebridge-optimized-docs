@@ -1,8 +1,8 @@
-# **CHAPTER 10 — TEMPLATES (PROCESS MANAGER)**
+# **CHAPTER 12 — TEMPLATES (PROCESS MANAGER)**
 
 ### *The Ontology & Template Engine of The Bridge*
 
-## **10.1 Introduction**
+## **12.1 Introduction**
 
 The Process Manager is the **universe generator** — the environment where the organization’s business ontology is defined and compiled into structural templates, attribute definitions, workflows, states, transitions, and triggers.
 
@@ -11,7 +11,7 @@ Once saved, these definitions automatically generate the UI, operational logic, 
 
 ---
 
-# **10.2 What the Process Manager Actually Does**
+# **12.2 What the Process Manager Actually Does**
 
 The Process Manager constructs the living ontology of the organization.
 
@@ -34,7 +34,7 @@ In simple terms:
 
 ---
 
-# **10.3 Multiple-Panel Architecture**
+# **12.3 Multiple-Panel Architecture**
 
 The Process Manager UI part of a number of coordinated panels of a single UI architecture:
 
@@ -46,7 +46,7 @@ The Process Manager UI part of a number of coordinated panels of a single UI arc
 
 ---
 
-## **10.3.1 Process Hierarchy (TreeView)**
+## **12.3.1 Process Hierarchy (TreeView)**
 
 This panel governs the **hierarchical** view of templates.
 
@@ -66,7 +66,7 @@ This is the **ASPETTO vertical axis**.
 
 ---
 
-## **10.3.2 Attributes & Meta-Properties**
+## **12.3.2 Attributes & Meta-Properties**
 
 The details section defines the **internal structure** of a process template.
 
@@ -93,7 +93,7 @@ The template itself **is** the form definition.
 
 ---
 
-## **10.3.3 Composition (Workflow, Relationships & Triggers)**
+## **12.3.3 Composition (Workflow, Relationships & Triggers)**
 
 The third sections defines how the process *behaves*.
 
@@ -113,13 +113,13 @@ its behavior, reactions, and life cycle.
 
 ---
 
-# **10.4 What the Process Manager Generates Internally**
+# **12.4 What the Process Manager Generates Internally**
 
 When a manager presses **Save**, the system compiles the ontology into four layers:
 
 ---
 
-## **10.4.1 CMP (ASPETTO)**
+## **12.4.1 CMP (ASPETTO)**
 
 The template is compiled into a structural JSON object:
 
@@ -137,7 +137,7 @@ This becomes the **template record** for future instances.
 
 ---
 
-## **10.4.2 ETY (ENTITÀ)**
+## **12.4.2 ETY (ENTITÀ)**
 
 The Process Manager defines:
 
@@ -152,7 +152,7 @@ This becomes the **operational control layer** for all instances.
 
 ---
 
-## **10.4.3 LOG (NATURA)**
+## **12.4.3 LOG (NATURA)**
 
 Based on the definitions:
 
@@ -165,7 +165,7 @@ Every behavioral rule defined in the Process Manager becomes **traceable**.
 
 ---
 
-## **10.4.4 Generated UI**
+## **12.4.4 Generated UI**
 
 The Bridge automatically creates:
 
@@ -181,7 +181,7 @@ This UI becomes what users see in the **Instance Manager**.
 
 ---
 
-# **10.5 Example: Defining the “Phone Call Management (PHO)” Process**
+# **12.5 Example: Defining the “Phone Call Management (PHO)” Process**
 
 The example definition you provided is *exactly* what belongs inside the Process Manager:
 
@@ -217,7 +217,7 @@ And once saved:
 
 ---
 
-# **10.6 Relationship with Instance Manager**
+# **12.6 Relationship with Instance Manager**
 
 It is important to distinguish the two roles clearly:
 
@@ -238,7 +238,7 @@ This separation ensures:
 
 ---
 
-# **10.7 Summary**
+# **12.7 Summary**
 
 The Process Manager is:
 
