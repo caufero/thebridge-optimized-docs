@@ -124,7 +124,7 @@ Activities included:
 
 ## 6. Alignment with Phase 1 scope
 
-The work carried out in **October 2025** fits the description in Luca’s accounting request for Invoice 3:
+The work carried out in **October 2025** was basically:
 
 * **Continued research activities**
 
