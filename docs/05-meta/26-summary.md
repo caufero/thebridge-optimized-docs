@@ -74,4 +74,4 @@ Breakdown of activities:
 
 ## **4. Confirmation**
 
-These totals represent the combined actual hours contributed by both developers during the three months of **Phase 1**.
+These totals represent the combined actual hours contributed by both developers from August to October.
