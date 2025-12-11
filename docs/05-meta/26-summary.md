@@ -1,4 +1,4 @@
-# Phase 2 Proposal – THE BRIDGE 3P3 Implementation in FileMaker
+# **Phase 2 Proposal – THE BRIDGE 3P3 Implementation in FileMaker**
 
 Prepared for: **KOOLTOOL SRL (Luca Meggiolaro)**
 
