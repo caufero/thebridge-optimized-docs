@@ -10,75 +10,101 @@ Prepared by: **Caufero (Cyril Amegah & Osbert Vulor)**
 
 This document provides the monthly hour breakdown for **November 2025**, corresponding to **Invoice 4** under Phase 1 of THE BRIDGE collaboration.
 
-November consisted entirely of **review, analysis, interpretation, and conceptual alignment** of the extended 3P3 documentation set provided by Luca.
+November work focused on:
 
-All hours reflect **research, ontology study, internal alignment, and preparatory work for Phase 2**.
+1. **Deep study and interpretation** of the extended 3P3 documentation set provided by Luca, including ontological foundations, Template rules, Navigator specifications, and conceptual matrices.
+2. **Substantial updates to the full Technical Specification document**, producing a new, expanded version that consolidated all findings from August–October and aligned them with the ontology clarified in November.
 
 ---
 
 ## **2. Hours Summary**
 
-| Month             | Actual Hours Worked (Cyril + Osbert) | Notes                                                                                                                                                                         |
-| ----------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **November 2025** | **167 hours**                        | Research-only month. Deep review of extended 3P3 documentation, Navigator logic, Template system, 10 Domains, Matrix interpretations, and conceptual preparation for Phase 2. |
+| Month             | Actual Hours Worked (Cyril + Osbert) | Notes                                                                                                                                      |
+| ----------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **November 2025** | **182 hours**                        | Month focused on research + extensive rewriting and restructuring of the Technical Specification into the newest version reviewed by Luca. |
 
 ---
 
 ## **3. Breakdown of November Work**
 
+---
+
 ### **3.1 Review & Assimilation of Extended 3P3 Documentation**
 
-**Total: 71 hours**
+**Total: 69 hours**
+
 Activities included:
 
 * Studying the *Complete Implementation Guide*
-* Analysing the *Ontological Propaedeutic (3P3)*
-* Reviewing TAB27 – Generative Triad (Father–Mother–Son)
-* Reviewing the *3P3 ESSENCE* conceptual foundations
-* Mapping the implications for ENTITY → TUPLE → RECORD structure
-* Identifying areas requiring clarification to ensure full ontological fidelity
+* Reviewing *3P3 Ontological Propaedeutic*
+* Analysing *TAB27 – Generative Triad (Father–Mother–Son)*
+* Integrating insights from the *3P3 ESSENCE* document
+* Mapping ENTITY → TUPLE → RECORD onto the ontological structure
+* Understanding the deeper logic behind the Template, Navigation, and Domain systems
+* Preparing conceptual clarifications to ensure the Technical Specification matched Luca’s 30-year ontological architecture
 
 ---
 
-### **3.2 Analysis of Template System & Meta-Structure**
+### **3.2 Updating & Expanding the Technical Specification Document (Newest Version)**
 
-**Total: 43 hours**
+**Total: 61 hours**
+
+This was the **largest workload** for November.
+
 Work included:
 
-* Reviewing the Template Design System
-* Understanding Template propagation and inheritance
-* Verifying MET–OPE symmetry against Template rules
-* Examining the matrix interactions required for future implementation
-* Preparing internal notes for the Phase 2 architecture
+* Rewriting major sections based on new ontological clarifications
+* Restructuring the full document into the 17-chapter architecture
+* Formalizing rules for CMP/ETY/LOG symmetry
+* Rewriting all architecture diagrams into text form
+* Consolidating insights from August–October into a unified specification
+* Adding missing definitions, tables, explanations, and technical formulations
+* Reviewing TAB37 & TAB38 and aligning terminology
 
 ---
 
 ### **3.3 Navigation Framework & Interaction Logic**
 
 **Total: 28 hours**
+
 Tasks included:
 
-* Reviewing Navigation Map – Session 2
-* Studying Navigator Specs – Session 3
-* Understanding behavioural transitions across the Z-axis
-* Analysing the JSX Navigator prototype structure
-* Mapping expected workflow implications for Phase 2
+* Reviewing the Navigation Map (Session 2)
+* Studying Navigator Specs (Session 3)
+* Analysing transitions across the Z-axis
+* Reviewing the JSX Navigator prototype
+* Integrating navigation implications into the updated Technical Specification
 
 ---
 
-### **3.4 Internal Alignment & Phase 2 Preparation**
+### **3.4 Template System & MET/OPE Alignment**
 
-**Total: 25 hours**
+**Total: 14 hours**
+
 Activities included:
 
-* Internal discussions to unify interpretation of MET, OPE, and domains
-* Identifying the precise points where Phase 2 development begins
-* Structuring anticipated development modules
-* Consolidating insights into a uniform framework for implementation
-* Preparing discussion points for Luca
+* Analysing Template propagation rules
+* Clarifying MET and OPE structural symmetry
+* Mapping Template → ETY → LOG interactions
+* Updating these sections in the technical document
+
+---
+
+### **3.5 Internal Alignment & Phase 2 Preparation**
+
+**Total: 10 hours**
+
+This included:
+
+* Reviewing interpretations between Cyril and Osbert
+* Creating internal technical notes for Phase 2
+* Identifying implementation points that depend on ontology confirmation
 
 ---
 
 ## **4. Confirmation**
 
-The hours listed above accurately reflect the work carried out in **November 2025**, fully aligned with the Phase 1 research objectives and the extended 3P3 documentation provided.
+The hours listed above accurately represent the work carried out in **November 2025**, covering both:
+
+* research and interpretation of newly received 3P3 materials, and
+* extensive rewriting and expansion of the Technical Specification into the version delivered to Luca.
