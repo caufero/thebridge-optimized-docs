@@ -1,5 +1,11 @@
 # Phase 2 Proposal – THE BRIDGE 3P3 Implementation in FileMaker
 
+Prepared for: **KOOLTOOL SRL (Luca Meggiolaro)**
+
+Prepared by: **Caufero (Cyril Amegah & Osbert Vulor)**
+
+---
+
 ## 1. Context and Objective
 
 Phase 1 delivered the ontological and technical foundation of **THE BRIDGE – 3P3 Ontological System** in FileMaker, including:
