@@ -1,6 +1,7 @@
 # **PHASE 1 – HOURS REPORT (NOVEMBER 2025)**
 
 Prepared for: **KOOLTOOL SRL (Luca Meggiolaro)**
+
 Prepared by: **Caufero (Cyril Amegah & Osbert Vulor)**
 
 ---
