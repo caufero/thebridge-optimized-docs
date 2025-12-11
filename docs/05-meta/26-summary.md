@@ -95,4 +95,4 @@ All reports are complete and ready for submission.
 
 ## **4. Confirmation**
 
-With the completion of the items above, **Phase 1 will be fully closed**, and the project will be ready to transition into **Phase 2 – Development** upon Luca’s approval.
+With the completion of the items above, **Phase 1 will be fully closed**, and the project will be ready to transition into **Phase 2 Development** upon Luca’s approval.
