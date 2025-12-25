@@ -1,6 +1,6 @@
 # **Chapter 16 — Script Configuration**
 
-## **14.1 Overview**
+## **16.1 Overview**
 
 Script configuration in THE BRIDGE establishes the executable layer that binds:
 
@@ -24,7 +24,7 @@ The purpose of scripts is to execute these rules **without altering them**.
 
 ---
 
-## **14.2 Script Layer Principles**
+## **16.2 Script Layer Principles**
 
 1. **Scripts are purely mechanical.**
    They should not contain domain logic or conditional branching for business rules.
@@ -43,7 +43,7 @@ The purpose of scripts is to execute these rules **without altering them**.
 
 ---
 
-## **14.3 Required Script Categories**
+## **16.3 Required Script Categories**
 
 THE BRIDGE requires scripts organized under five main categories:
 
@@ -57,11 +57,11 @@ These categories map directly to the architecture.
 
 ---
 
-# **14.4 Navigation Scripts**
+# **16.4 Navigation Scripts**
 
 These scripts implement the three Universal Navigators:
 
-### **14.4.1 Navigate_X**
+### **16.4.1 Navigate_X**
 
 Mutation of attributes (horizontal movement).
 
@@ -85,7 +85,7 @@ All changes must be executed via OPE entries.
 
 ---
 
-### **14.4.2 Navigate_Y**
+### **16.4.2 Navigate_Y**
 
 Creation and filtering of entities (vertical movement).
 
@@ -108,7 +108,7 @@ Navigate_Y must never modify existing entities.
 
 ---
 
-### **14.4.3 Navigate_Z**
+### **16.4.3 Navigate_Z**
 
 Depth-based hierarchical navigation.
 
@@ -129,7 +129,7 @@ Examples:
 
 ---
 
-### **14.4.4 Universal_Processor**
+### **16.4.4 Universal_Processor**
 
 This script orchestrates multi-step processes.
 
@@ -146,11 +146,11 @@ Universal_Processor is the backbone of complex workflows.
 
 ---
 
-# **14.5 Instance Manager Scripts**
+# **16.5 Instance Manager Scripts**
 
 These scripts implement the logic described in Chapter 9.
 
-### **14.5.1 Create Entity**
+### **16.5.1 Create Entity**
 
 Responsibilities:
 
@@ -163,7 +163,7 @@ Responsibilities:
 * create LOG entry
 * return new entity state
 
-### **14.5.2 Load Template**
+### **16.5.2 Load Template**
 
 Responsibilities:
 
@@ -172,21 +172,21 @@ Responsibilities:
 * load default_values
 * return template definition
 
-### **14.5.3 Build Initial JSON**
+### **16.5.3 Build Initial JSON**
 
 Responsible for constructing the first ETY.json_data packet.
 
-### **14.5.4 Register Creation in LOG**
+### **16.5.4 Register Creation in LOG**
 
 Writes the immutable history entry.
 
 ---
 
-# **14.6 Process Manager Scripts**
+# **16.6 Process Manager Scripts**
 
 These scripts execute OPE transformations.
 
-### **14.6.1 Execute Operation**
+### **16.6.1 Execute Operation**
 
 Responsibilities:
 
@@ -197,25 +197,25 @@ Responsibilities:
 * trigger LOG entry
 * return updated entity
 
-### **14.6.2 Prepare Mutation Rules**
+### **16.6.2 Prepare Mutation Rules**
 
 Extract behavior codes and attribute rules from the OPE’s CMP/ETY definitions.
 
-### **14.6.3 Apply Mutation**
+### **16.6.3 Apply Mutation**
 
 Perform the diff between before and after states.
 
-### **14.6.4 Commit Mutation**
+### **16.6.4 Commit Mutation**
 
 Write ETY update, write LOG entry.
 
 ---
 
-# **14.7 Utility Scripts**
+# **16.7 Utility Scripts**
 
 Utility scripts support internal mechanisms but do not alter entities directly.
 
-### **14.7.1 JSON Tools**
+### **16.7.1 JSON Tools**
 
 * JSON merge
 * JSON diff
@@ -223,7 +223,7 @@ Utility scripts support internal mechanisms but do not alter entities directly.
 * JSON attribute reader
 * JSON factory utilities
 
-### **14.7.2 Structural Tools**
+### **16.7.2 Structural Tools**
 
 * load MET
 * load ATR
@@ -231,7 +231,7 @@ Utility scripts support internal mechanisms but do not alter entities directly.
 * load STRUCTURE_ID mapping
 * load OPE permissions
 
-### **14.7.3 Filtering Tools**
+### **16.7.3 Filtering Tools**
 
 * filter ETY by JSON criteria
 * filter by structure / entity_type
@@ -239,11 +239,11 @@ Utility scripts support internal mechanisms but do not alter entities directly.
 
 ---
 
-# **14.8 System Integrity Scripts**
+# **16.8 System Integrity Scripts**
 
 These scripts ensure the ontology remains consistent.
 
-### **14.8.1 CMP Consistency Check**
+### **16.8.1 CMP Consistency Check**
 
 Verifies:
 
@@ -252,7 +252,7 @@ Verifies:
 * ATR definitions
 * structural rules alignment
 
-### **14.8.2 ETY Integrity Check**
+### **16.8.2 ETY Integrity Check**
 
 Verifies:
 
@@ -261,17 +261,17 @@ Verifies:
 * every ETY structure_id is correct
 * breadcrumb chains are valid
 
-### **14.8.3 LOG Integrity Check**
+### **16.8.3 LOG Integrity Check**
 
 Verifies immutability and completeness of logs.
 
-### **14.8.4 Bootstrap Verification**
+### **16.8.4 Bootstrap Verification**
 
 Ensures all MET and OPE triad entries exist.
 
 ---
 
-# **14.9 Script Folder Structure**
+# **16.9 Script Folder Structure**
 
 Recommended FileMaker script organization:
 
@@ -309,7 +309,7 @@ This structure prevents fragmentation and ensures the ontology flows cleanly thr
 
 ---
 
-# **14.10 Summary**
+# **16.10 Summary**
 
 Script configuration establishes the executable substrate of THE BRIDGE:
 
