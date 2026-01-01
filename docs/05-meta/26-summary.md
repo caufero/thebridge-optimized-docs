@@ -1,3 +1,5 @@
+# Suggested Improvements To 4KPAINT Solution
+
 Here are some improvements to the 4KPAINT solution, that we will love to suggest.
 
 ---
