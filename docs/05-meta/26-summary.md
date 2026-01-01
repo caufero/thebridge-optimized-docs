@@ -38,46 +38,46 @@ Here are some improvements to the 4KPAINT solution, that we will love to suggest
 
 ## 3) Daily Logs
 - Add clear workflow states to the list:
-  - Draft → Submitted → Approved → Locked
+    - Draft → Submitted → Approved → Locked
 - Make locking strict:
-  - Locked means no edits for normal users.
-  - Unlock should require a reason + log who did it and when.
+    - Locked means no edits for normal users.
+    - Unlock should require a reason + log who did it and when.
 - Improve materials entry:
-  - Make it structured (qty + item) or select-from-list.
+    - Make it structured (qty + item) or select-from-list.
 - Improve notes:
-  - Add categories like Safety / Issues / Progress / Delays / Client Request.
+    - Add categories like Safety / Issues / Progress / Delays / Client Request.
 - Add photo attachments to logs:
-  - Jobsite photos directly on the daily log.
+    - Jobsite photos directly on the daily log.
 
 ---
 
 ## 4) Time Cards
 - Bulk approve/unapprove should be safer:
-  - Show preview before approving.
-  - Unapprove should require a reason + log it.
+    - Show preview before approving.
+    - Unapprove should require a reason + log it.
 - Add overtime rules (if they want it):
-  - Daily or weekly thresholds.
+    - Daily or weekly thresholds.
 - Add time rounding rules (if they want it):
-  - Nearest 15 mins etc.
+    - Nearest 15 mins etc.
 
 ---
 
 ## 5) Pay Rates
 - Pay rate effective dating:
-  - Apply correct rate based on date worked.
+    - Apply correct rate based on date worked.
 - Rate edit audit trail:
-  - Who changed it, old/new values, date/time, reason.
+    - Who changed it, old/new values, date/time, reason.
 - Bulk approve preview (same idea as time cards).
 
 ---
 
 ## 6) Setups (Clients / Jobs / Employees / Contractors / Suppliers)
 - Add required-field checks before records can be used:
-  - Jobs must have client + supervisor + active status before appearing in logs.
+    - Jobs must have client + supervisor + active status before appearing in logs.
 - Prevent duplicates for key lists:
-  - Clients, suppliers, employees.
+    - Clients, suppliers, employees.
 - Keep the setup screens consistent:
-  - Same tab structure and list tools across all setup modules.
+    - Same tab structure and list tools across all setup modules.
 
 ---
 
