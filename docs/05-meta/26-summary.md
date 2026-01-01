@@ -11,6 +11,7 @@ Here are some improvements to the 4KPAINT solution, that we will love to suggest
     - Pay Rates pending approval
     - Each one should be clickable and open the filtered list.
 
+
  
 - Add **quick buttons** on the Dashboard:
     - New Daily Log
