@@ -11,7 +11,7 @@ Here are some improvements to the 4KPAINT solution, that we will love to suggest
     - Pay Rates pending approval
     - Each one should be clickable and open the filtered list.
 
-
+<br/>
  
 - Add **quick buttons** on the Dashboard:
     - New Daily Log
@@ -20,6 +20,8 @@ Here are some improvements to the 4KPAINT solution, that we will love to suggest
     - Open Master Ledger
     - Open Cost Reports
 
+<br/>
+ 
 - Add quick time filters on the Dashboard:
     - Today
     - This Week
