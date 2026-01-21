@@ -1,12 +1,10 @@
 # ELIMES OUTFIT SOFTWARE PROPOSAL
 
-### Prepared for: Elimes Outfit
+#### Prepared for: Elimes Outfit
 
-### Prepared by: Caufero
+#### Prepared by: Caufero
 
-### Date: January 16, 2026
-
-### Version: v1
+#### Date: January 16, 2026
 
 <br><br>
 
